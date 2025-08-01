@@ -1,29 +1,102 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient shadow-sm py-3"
+      style={{ zIndex: 2000 }}
+    >
       <div className="container">
-        <Link className="navbar-brand" to="/">IET Conference</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span className="navbar-toggler-icon"></span>
+        {/* Brand Logo */}
+        <NavLink className="navbar-brand fw-bold fs-4" to="/">
+          IET Conference
+        </NavLink>
+
+        {/* Toggler for mobile view */}
+        <button
+          className="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i className="fas fa-bars text-white fs-4"></i>
         </button>
+
+        {/* Collapsible Menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          {/* Left side links */}
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <NavLink exact="true" className="nav-link fw-semibold" to="/">
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/schedule">Schedule</Link>
+              <NavLink className="nav-link fw-semibold" to="/schedule">
+                Schedule
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/speakers">Speakers</Link>
+              <NavLink className="nav-link fw-semibold" to="/speakers">
+                Speakers
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/venue">Venue</Link>
+              <NavLink className="nav-link fw-semibold" to="/venue">
+                Venue
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <NavLink className="nav-link fw-semibold" to="/contact">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+
+          {/* Right side social icons */}
+          <ul className="navbar-nav d-flex flex-row gap-2">
+            <li className="nav-item">
+              <a
+                className="nav-link text-white"
+                href="https://www.youtube.com/@iet"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-youtube fs-5"></i>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-white"
+                href="https://www.facebook.com/iet"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-facebook-f fs-5"></i>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-white"
+                href="https://twitter.com/iet"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-twitter fs-5"></i>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-white"
+                href="https://github.com/iet"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-github fs-5"></i>
+              </a>
             </li>
           </ul>
         </div>
