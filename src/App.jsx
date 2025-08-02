@@ -9,6 +9,7 @@ import VenueScreen from './screens/VenueScreen';
 import CommitteesScreen from './screens/CommitteesScreen';
 import ProgramScreen from './screens/ProgramScreen';
 import TravelScreen from './screens/TravelScreen';
+import CallForPapersScreen from './screens/CallForPapersScreen';
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/committees" element={<CommitteesScreen />} />
         <Route path="/program" element={<ProgramScreen />} />
         <Route path="/travel" element={<TravelScreen />} />
+        <Route path="/call-for-papers" element={<CallForPapersScreen />} />
 
       </Routes>
       <Footer />

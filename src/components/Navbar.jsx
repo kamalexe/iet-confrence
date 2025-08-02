@@ -5,7 +5,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const isCallForActive = ["/committees", "/program"].includes(location.pathname);
-  const isCityActive = ["/venue", "/program"].includes(location.pathname); // adjust if travel has a different path
+  const isCityActive = ["/venue", "/program"].includes(location.pathname); 
 
   return (
     <nav className="m-4 navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top" style={{ zIndex: 2000 }}>
@@ -40,7 +40,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            {/* Call For Papers Dropdown */}
+            {/* Information Dropdown */}
             <li className={`nav-item dropdown ${isCallForActive ? "active" : ""}`}>
               <a
                 className="nav-link dropdown-toggle fw-semibold"
@@ -50,7 +50,7 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Call For Papers
+                Information
               </a>
               <ul className="dropdown-menu" aria-labelledby="callForDropdown">
                 <li>
@@ -66,13 +66,48 @@ const Navbar = () => {
               </ul>
             </li>
 
+
+
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold" to="/schedule">
                 Schedule
               </NavLink>
             </li>
 
-
+  {/* Information Dropdown */}
+            <li className={`nav-item dropdown ${isCallForActive ? "active" : ""}`}>
+              <a
+                className="nav-link dropdown-toggle fw-semibold"
+                href="#"
+                id="authorDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Author
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="authorDropdown">
+                <li>
+                  <NavLink className="dropdown-item" to="/call-for-papers">
+                    Call for papers
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/submission-instructions">
+                  Submission Instructions
+                  </NavLink>
+                </li><li>
+                  <NavLink className="dropdown-item" to="/publication-guidelines">
+                  Publication Guidelines
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/registration">
+                  Registration 
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
             {/* City Dropdown */}
             <li className={`nav-item dropdown ${isCityActive ? "active" : ""}`}>
               <a

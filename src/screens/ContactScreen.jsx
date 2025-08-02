@@ -29,7 +29,8 @@ const ContactScreen = () => {
             placeholder="Your message..."
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-gradient w-100">
+
           Send Message
         </button>
       </form>
