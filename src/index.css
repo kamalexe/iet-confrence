@@ -1,11 +1,12 @@
-/* :root {
+/* Enable dark theme by default */
+:root {
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,26 +14,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Optional global a and button styles for dark mode */
+a {
+  font-weight: 500;
+  color: #91a4ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #c2cfff;
 }
 
 button {
@@ -42,7 +41,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #1f1f1f;
+  color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -54,34 +54,44 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+/* Carousel image fix */
 .carousel-img {
-  height: 400px; /* or any fixed height you want */
+  height: 400px;
   object-fit: cover;
 }
 
-/* styles.css or index.css */
-.btn-primary {
-  background-color: #6610f2 !important;  /* Custom purple */
-  border-color: #6610f2 !important;
+/* Glassmorphism background */
+.bg-glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.navbar {
-  background-color: #1a1a2e !important; /* Dark navy */
+
+/* Themed table */
+.table-glass th,
+.table-glass td {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
-footer {
-  background-color: #0f3460;
-  color: white;
+/* Dark inputs */
+.form-control.bg-glass-input {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-control.bg-glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*  iframe styling */
+.map-frame {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }

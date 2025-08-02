@@ -3,6 +3,8 @@ import carousel1 from '../assets/building2.jpg';
 import carousel2 from '../assets/college_teachers.png';
 import carousel3 from '../assets/college_tour.jpg';
 
+import collegeTour from '../assets/college_tour.jpg';
+
 const HomeScreen = () => {
   const [count, setCount] = useState(0);
 
@@ -25,8 +27,10 @@ const HomeScreen = () => {
   ];
 
   return (
-    <main className="container my-5">
-      <div
+    <main className='mt-5 mb-5' >
+
+     <div>
+     <div
         id="eventCarousel"
         className="carousel slide mb-5"
         data-bs-ride="carousel"
@@ -56,7 +60,7 @@ const HomeScreen = () => {
                 className="d-block w-100 carousel-img"
                 alt={img.title}
               />
-              <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <div className="carousel-caption d-none d-md-block bg-glass bg-opacity-50 rounded">
                 <h5>{img.title}</h5>
                 <p>{img.desc}</p>
               </div>
@@ -81,6 +85,7 @@ const HomeScreen = () => {
           <span className="carousel-control-next-icon" />
         </button>
       </div>
+     </div>
     </main>
   );
 };
