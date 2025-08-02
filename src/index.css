@@ -95,3 +95,50 @@ button:focus-visible {
   border-radius: 0.75rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
+
+/* Accordion Header */
+.accordion-button {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: none;
+  border-radius: 0.75rem !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #646cff;
+}
+
+/* Remove default arrow */
+.accordion-button::after {
+  filter: invert(1);
+}
+
+/* Accordion Body */
+.accordion-body {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 0.5rem;
+}
+
+/* Accordion Item Container */
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+/* Smooth open/close */
+.accordion-collapse {
+  transition: all 0.35s ease-in-out;
+}
