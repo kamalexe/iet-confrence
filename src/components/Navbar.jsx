@@ -1,21 +1,20 @@
-import { NavLink } from "react-router-dom";
-import logo from '../assets/logo.png';
+import { NavLink, useLocation } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
-  return (
-    <nav
-      className="navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top"
-      style={{ zIndex: 2000 }}
-    >
-      <div className="container">
-        {/* Brand Logo */}
-        <NavLink className="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" to="/">
-          {/* <img src={logo} alt="Logo" height="40" /> */}
-          ICFCSAI 2025
+  const location = useLocation();
 
+  const isCallForActive = ["/committees", "/program"].includes(location.pathname);
+  const isCityActive = ["/venue", "/program"].includes(location.pathname); // adjust if travel has a different path
+
+  return (
+    <nav className="m-4 navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top" style={{ zIndex: 2000 }}>
+      <div className="container">
+        {/* Brand */}
+        <NavLink className="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" to="/">
+          ICFCSAI 2025
         </NavLink>
 
-        {/* Toggler for mobile view */}
         <button
           className="navbar-toggler border-0"
           type="button"
@@ -28,88 +27,77 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Collapsible Menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          {/* Left side links */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2">
             <li className="nav-item">
               <NavLink exact="true" className="nav-link fw-semibold" to="/">
                 Home
               </NavLink>
             </li>
-      
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold" to="/speakers">
                 Speakers
               </NavLink>
             </li>
-            <li className="nav-item dropdown">
-  <NavLink
-    className="nav-link dropdown-toggle fw-semibold"
-    to="#"
-    id="callForDropdown"
-    role="button"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-  >
-    Call For Papers
-  </NavLink>
-  <ul className="dropdown-menu" aria-labelledby="callForDropdown">
-    <li>
-      <NavLink className="dropdown-item" to="/committees">      
-    Committees
-      </NavLink>
-    </li>
-    <li>
-      <NavLink className="dropdown-item" to="/program">
-        Program
-      </NavLink>
-    </li>
-   
-  </ul>
-</li>
 
+            {/* Call For Papers Dropdown */}
+            <li className={`nav-item dropdown ${isCallForActive ? "active" : ""}`}>
+              <a
+                className="nav-link dropdown-toggle fw-semibold"
+                href="#"
+                id="callForDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Call For Papers
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="callForDropdown">
+                <li>
+                  <NavLink className="dropdown-item" to="/committees">
+                    Committees
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/program">
+                    Program
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
 
-            
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold" to="/schedule">
                 Schedule
               </NavLink>
             </li>
-            
-            <li className="nav-item">
-              <NavLink className="nav-link fw-semibold" to="/venue">
-                Venue
-              </NavLink>
-              
+
+
+            {/* City Dropdown */}
+            <li className={`nav-item dropdown ${isCityActive ? "active" : ""}`}>
+              <a
+                className="nav-link dropdown-toggle fw-semibold"
+                href="#"
+                id="cityDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                City
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="cityDropdown">
+                <li>
+                  <NavLink className="dropdown-item" to="/venue">
+                    Venue
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/travel">
+                    Travel
+                  </NavLink>
+                </li>
+              </ul>
             </li>
-            <li className="nav-item dropdown">
-  <NavLink
-    className="nav-link dropdown-toggle fw-semibold"
-    to="#"
-    id="callForDropdown"
-    role="button"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-  >
-    City
-  </NavLink>
-  <ul className="dropdown-menu" aria-labelledby="callForDropdown">
-    <li>
-      <NavLink className="dropdown-item" to="/venue">      
-    Venue
-      </NavLink>
-    </li>
-    <li>
-      <NavLink className="dropdown-item" to="/program">
-        Travel
-      </NavLink>
-    </li>
-   
-  </ul>
-</li>
-
-
 
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold" to="/contact">
@@ -118,7 +106,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* Right side social icons */}
+          {/* Social Icons */}
           <ul className="navbar-nav d-flex flex-row gap-2">
             <li className="nav-item">
               <a className="nav-link text-white" href="https://www.youtube.com/@iet" target="_blank" rel="noreferrer">

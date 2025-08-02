@@ -8,6 +8,8 @@ import SpeakersScreen from './screens/SpeakersScreen';
 import VenueScreen from './screens/VenueScreen';
 import CommitteesScreen from './screens/CommitteesScreen';
 import ProgramScreen from './screens/ProgramScreen';
+import TravelScreen from './screens/TravelScreen';
+
 
 
 
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/venue" element={<VenueScreen />} />
         <Route path="/committees" element={<CommitteesScreen />} />
         <Route path="/program" element={<ProgramScreen />} />
+        <Route path="/travel" element={<TravelScreen />} />
+
       </Routes>
       <Footer />
     </Router>
