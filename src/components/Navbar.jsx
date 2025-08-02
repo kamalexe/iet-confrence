@@ -10,8 +10,9 @@ const Navbar = () => {
       <div className="container">
         {/* Brand Logo */}
         <NavLink className="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" to="/">
-          <img src={logo} alt="Logo" height="40" />
-          IET Conference
+          {/* <img src={logo} alt="Logo" height="40" /> */}
+          ICFCSAI 2025
+
         </NavLink>
 
         {/* Toggler for mobile view */}
@@ -36,21 +37,80 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link fw-semibold" to="/schedule">
-                Schedule
-              </NavLink>
-            </li>
+      
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold" to="/speakers">
                 Speakers
               </NavLink>
             </li>
+            <li className="nav-item dropdown">
+  <NavLink
+    className="nav-link dropdown-toggle fw-semibold"
+    to="#"
+    id="callForDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Call For Papers
+  </NavLink>
+  <ul className="dropdown-menu" aria-labelledby="callForDropdown">
+    <li>
+      <NavLink className="dropdown-item" to="/committees">      
+    Committees
+      </NavLink>
+    </li>
+    <li>
+      <NavLink className="dropdown-item" to="/program">
+        Program
+      </NavLink>
+    </li>
+   
+  </ul>
+</li>
+
+
+            
+            <li className="nav-item">
+              <NavLink className="nav-link fw-semibold" to="/schedule">
+                Schedule
+              </NavLink>
+            </li>
+            
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold" to="/venue">
                 Venue
               </NavLink>
+              
             </li>
+            <li className="nav-item dropdown">
+  <NavLink
+    className="nav-link dropdown-toggle fw-semibold"
+    to="#"
+    id="callForDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    City
+  </NavLink>
+  <ul className="dropdown-menu" aria-labelledby="callForDropdown">
+    <li>
+      <NavLink className="dropdown-item" to="/venue">      
+    Venue
+      </NavLink>
+    </li>
+    <li>
+      <NavLink className="dropdown-item" to="/program">
+        Travel
+      </NavLink>
+    </li>
+   
+  </ul>
+</li>
+
+
+
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold" to="/contact">
                 Contact
