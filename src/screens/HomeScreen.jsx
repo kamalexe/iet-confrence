@@ -4,7 +4,6 @@ import carousel2 from "../assets/college_teachers.png";
 import carousel3 from "../assets/college_tour.jpg";
 
 const HomeScreen = () => {
-  const [count, setCount] = useState(0);
 
   const carouselImages = [
     {
