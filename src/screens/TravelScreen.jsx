@@ -2,8 +2,8 @@ import React from "react";
 
 const TravelScreen = () => {
   return (
-    <section className="container py-5">
-      <h2 className="text-center mb-5 fw-bold text-white">Travel & Accommodation</h2>
+    <main className="container">
+      <h2 className="mb-5 fw-bold text-white">Travel & Accommodation</h2>
 
       {/* How to Reach */}
       <div className="row mb-5 align-items-center">
@@ -53,7 +53,7 @@ const TravelScreen = () => {
           ></iframe>
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 

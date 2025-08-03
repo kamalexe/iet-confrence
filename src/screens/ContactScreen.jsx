@@ -1,6 +1,6 @@
 const ContactScreen = () => {
   return (
-    <main className='mt-5 mb-5' >
+    <main className='container' >
 
     <div className="container py-5">
       <h2 className="mb-4">Contact Us</h2>

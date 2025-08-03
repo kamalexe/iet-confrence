@@ -42,7 +42,7 @@ const programTracks = [
 const ProgramScreen = () => {
 
   return (
-    <div className="container py-5">
+    <main className='container'>
       <div className="p-4 rounded">
         <h2 className="mb-4">Conference Program Tracks</h2>
 
@@ -76,7 +76,7 @@ const ProgramScreen = () => {
 
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

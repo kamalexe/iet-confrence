@@ -2,7 +2,7 @@ import React from 'react';
 
 const CallForPapersScreen = () => {
     return (
-        <div className="container py-5">
+        <main className='container'>
             <h1 >Call for Papers</h1>
 
             <p className="text-lg mb-6 leading-relaxed">
@@ -52,7 +52,7 @@ const CallForPapersScreen = () => {
 
 
 
-        </div>
+        </main>
     );
 };
 

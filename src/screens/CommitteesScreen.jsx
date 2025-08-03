@@ -51,7 +51,7 @@ const committeeMembers = [
 
 const CommitteesScreen = () => {
   return (
-    <main className='my-5'>
+    <main className='container'>
       <div className="container">
         <div className="p-4 rounded">
           <h2 className="mb-4 text-white">Organizing Committee</h2>

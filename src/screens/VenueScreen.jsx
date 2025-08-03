@@ -2,7 +2,7 @@ import React from "react";
 
 const VenueScreen = () => {
   return (
-    <section className="container py-5">
+    <main className='container'>
       <h2 className="text-center text-white fw-bold mb-5">Venue Details</h2>
 
       {/* Venue Overview */}
@@ -58,7 +58,7 @@ const VenueScreen = () => {
           ></iframe>
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 

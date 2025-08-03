@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import carousel1 from "../assets/building2.jpg";
+  import carousel1 from "../assets/c1.jpg";
 import carousel2 from "../assets/college_teachers.png";
 import carousel3 from "../assets/college_tour.jpg";
+
 
 const HomeScreen = () => {
 
@@ -24,10 +25,10 @@ const HomeScreen = () => {
   ];
 
   return (
-    <main className="mt-5 mb-5">
-      {/* Carousel */}
-      <div>
-        <div
+    <main >      {/* Carousel */}
+      
+      
+      <div style={{ marginTop: "-10rem" }}>        <div
           id="eventCarousel"
           className="carousel slide mb-5"
           data-bs-ride="carousel"
