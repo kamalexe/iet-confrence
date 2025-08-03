@@ -77,7 +77,7 @@ main {
 
 /* Carousel image fix */
 .carousel-img {
-  height: 100vh;
+  height: 800px;
   object-fit: cover;
 }
 
