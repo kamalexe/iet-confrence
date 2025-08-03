@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="text-center text-lg-start text-white bg-dark">
-      <section className="d-flex justify-content-between p-4 bg-dark">
+    <footer className="text-center text-lg-start text-white">
+      <section className="d-flex justify-content-between p-4">
         <div className="me-5">
           <span>Get connected with us on social networks:</span>
         </div>
