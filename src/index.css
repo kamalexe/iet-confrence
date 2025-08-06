@@ -286,7 +286,7 @@ main {
 /* Button */
 
 .btn-gradient {
-  background-color: #1f1f1f;
+  background-color: #1f1f1f36;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 0.5rem;

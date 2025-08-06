@@ -10,7 +10,9 @@ import CommitteesScreen from './screens/CommitteesScreen';
 import ProgramScreen from './screens/ProgramScreen';
 import TravelScreen from './screens/TravelScreen';
 import CallForPapersScreen from './screens/CallForPapersScreen';
-
+import SubmissionInstructionsScreen from './screens/SubmissionInstructionsScreen';
+import PublicationGuidelinesScreen from './screens/PublicationGuidelinesScreen';
+import RegistrationGuidelinesScreen from './screens/RegistrationGuidelinesScreen';
 
 
 
@@ -28,6 +30,10 @@ const App = () => {
         <Route path="/program" element={<ProgramScreen />} />
         <Route path="/travel" element={<TravelScreen />} />
         <Route path="/call-for-papers" element={<CallForPapersScreen />} />
+        <Route path="/submission-instructions" element={<SubmissionInstructionsScreen />} />
+        <Route path="/publication-guidelines" element={<PublicationGuidelinesScreen />} />
+        <Route path="/registration" element={<RegistrationGuidelinesScreen />} />
+
 
       </Routes>
       <Footer />
