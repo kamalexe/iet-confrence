@@ -5,47 +5,47 @@ const committeeMembers = [
   {
     name: 'Prof. Ashu Rani',
     role: 'Chief Patron\nVice Chancellor, DBRAU, Agra',
-    image: placeholder,
+    image: '/committees/Prof. Ashu Rani.jpeg',
   },
   {
     name: 'Prof. Manu Pratap Singh',
     role: 'Patron\nDirector, IET',
-    image: placeholder,
+    image: '/committees/Prof. Manu Pratap Singh.jpeg',
   },
   {
     name: 'Dr. Rajesh Lavania',
     role: 'Convenor\nHead Incharge, CSE',
-    image: placeholder,
+    image: '/committees/Prof. Ashu Rani.jpeg',
   },
   {
     name: 'Dr. Ganesh Chandra',
     role: 'Organizing Secretary',
-    image: placeholder,
+    image: '/committees/Prof. Ashu Rani.jpeg',
   },
   {
     name: 'Dr. Pragya Kabra',
     role: 'Program Organizer',
-    image: placeholder,
+    image: '/committees/Prof. Ashu Rani.jpeg',
   },
   {
     name: 'Er. Subodh Sharma',
     role: 'Advisory Committee Head',
-    image: placeholder,
+    image: '/committees/Prof. Ashu Rani.jpeg',
   },
   {
     name: 'Er. Prashant Maharishi',
     role: 'Technical Committee Head',
-    image: placeholder,
+    image: '/committees/Prof. Ashu Rani.jpeg',
   },
   {
     name: 'Er. Shikhi Agarwal',
     role: 'Publicity Committee Head',
-    image: placeholder,
+    image: '/committees/Prof. Ashu Rani.jpeg',
   },
   {
     name: 'Er. Saurabh Garg',
     role: 'Decoration & Media Committee Head',
-    image: placeholder,
+    image: '/committees/Prof. Ashu Rani.jpeg',
   },
 ];
 
