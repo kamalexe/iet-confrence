@@ -30,6 +30,11 @@ const speakers = [
     role: 'Director',
     image: '/speakers/Prof. (Dr.) Neelendra Badal.jpeg',
     designation: 'Rajkiya Engineering College, Bijnor, India',
+  }, {
+    name: 'Dr. Saroj Kr. Biswas',
+    role: 'Associate Professor',
+    image: '/speakers/Dr. Saroj Kr. Biswas.jpg',
+    designation: 'National Institute of Technology, Silchar, India',
   },
   {
     name: 'Dr. B.D.K. Patro',

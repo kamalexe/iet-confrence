@@ -5,17 +5,17 @@ const PublicationGuidelinesScreen = () => {
         <main className="container py-5">
             <div className="bg-glass p-5 rounded-4 shadow">
                 <h2 className="mb-4">Publication Guidelines</h2>
-                <p className="lead text-white-50">
+                <p className="lead">
                     Please review the publication process carefully before submitting your paper.
                 </p>
 
                 <section className="mt-4">
-                    <p className="text-white-50">
-                        All full paper submissions to ISCBI 2026 should be related to the main topics of the conference. 
+                    <p className="">
+                        All full paper submissions to ICFCSAI 2025 should be related to the main topics of the conference. 
                         Each paper will be peer-reviewed and evaluated based on originality, technical or research depth, correctness, completeness, 
                         contributions, and readability.
                     </p>
-                    <p className="text-white-50">
+                    <p className="">
                         Manuscripts will first undergo initial screening by the editorial team. Submissions that pass the screening 
                         will be reviewed by at least two to three experts. Based on reviewer feedback, the editor will decide whether to accept or reject the paper.
                         Accepted papers will be published in the proceedings after registration and presentation.
@@ -24,10 +24,10 @@ const PublicationGuidelinesScreen = () => {
 
                 <section className="mt-5">
                     <h4 className="text-white mb-3">Publishing Process</h4>
-                    <ol className="text-white-50">
+                    <ol className="">
                         <li>
                             Authors must submit their papers via the submission system or by email to:{" "}
-                            <a href="mailto:iscbi@chairmen.org" className="text-primary">iscbi@chairmen.org</a>. 
+                            <a href="mailto:icfcsai2025@gmail.com" className="text-primary">icfcsai2025@gmail.com</a>. 
                             Preferred formats: Word (.docx) or PDF.
                         </li>
                         <li>
@@ -38,7 +38,7 @@ const PublicationGuidelinesScreen = () => {
                         </li>
                         <li>
                             Upon acceptance, authors must pay the registration fee and send the following documents to{" "}
-                            <a href="mailto:iscbi@chairmen.org" className="text-primary">iscbi@chairmen.org</a>: final manuscript (PDF and Word), registration form, and payment proof.
+                            <a href="mailto:icfcsai2025@gmail.com" className="text-primary">icfcsai2025@gmail.com</a>: final manuscript (PDF and Word), registration form, and payment proof.
                         </li>
                         <li>
                             The final version should be proofread, properly typeset, and submitted before the deadline.
