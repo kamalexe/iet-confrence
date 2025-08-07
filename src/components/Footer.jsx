@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold">Institute of Engineering & Technology, Agra</h6>
               <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} />
-              <p>Dr. B. R. Ambedkar University, Agra </p>
+              <p>Dr. Bhimrao Ambedkar University, Agra</p>
             </div>
 
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -16,8 +16,8 @@ const Footer = () => {
               <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} />
               <p><a className="text-white" href="/pdfs/paper-template.docx" download>Download Paper Template</a></p>
               <p><a className="text-white" href="/pdfs/guide.docx" download>Download Submission Guidelines</a></p>
-              <p><a className="text-white" href="/pdfs/FCSAI-2025 Brochure.pdf" download>FCSAI-2025 Brochure</a></p>
-              <p><a className="text-white" href="/pdfs/Call-for-Papers.pdf" download>Call for Papers</a></p>
+              <p><a className="text-white" href="/pdfs/ICFCSAI-2025 Brochure.pdf" target="_blank" rel="noopener noreferrer"> ICFCSAI-2025 Brochure</a></p>
+              <p><a className="text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform" target="_blank">Registion Form</a></p>
               <p><a className="text-white" href="/contact">Help</a></p>
             </div>
 
@@ -25,31 +25,25 @@ const Footer = () => {
               <h6 className="text-uppercase fw-bold">Contact</h6>
               <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} />
               <p>
-                <i className="fas fa-home me-3"></i>
                 <a
                   href="https://maps.app.goo.gl/3Q4BWgvDzVAnts7J9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white text-decoration-none"
-                >
-                  IET Khandari, Agra, India
-                </a>
+                >Institute of Engineering & Technology, Agra, India</a>
               </p>
 
               <p>
-                <i className="fas fa-envelope me-3"></i>
                 <a href="mailto:icfcsai2025@gmail.com" className="text-white text-decoration-none">
                   icfcsai2025@gmail.com
                 </a>
               </p>
               <p>
-                <i className="fas fa-phone me-3"></i>
-                <a href="tel:+919453483137" className="text-white text-decoration-none">
-                  +91 94534 83137
+                <a href="tel:+9173551 50794" className="text-white text-decoration-none">
+                  +9173551 50794
                 </a>
               </p>
               <p>
-                <i className="fas fa-print me-3"></i>
                 <a href="tel:+919457250534" className="text-white text-decoration-none">
                   +91 94572 50534
                 </a>
