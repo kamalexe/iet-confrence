@@ -57,7 +57,7 @@ const HomeScreen = () => {
 
       {/* About Section */}
       <section className="container">
-        <div className="bg-glass text-white p-5 rounded shadow-sm">
+        <div className="bg-glass p-5">
           <h2 className="mb-3">About the Conference</h2>
           <p className="mb-3">
             The <strong>International Conference on Future of Computer Science with AI: Theory, Practice, and Impact (FCSAI-2025)</strong> is a premier event that brings together leading minds from academia, industry, and research to explore the evolving landscape of Computer Science and Artificial Intelligence.

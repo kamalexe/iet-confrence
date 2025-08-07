@@ -2,13 +2,13 @@ import React from "react";
 
 const TravelScreen = () => {
   return (
-    <main className="container">
+    <main className="container py-5">
       <h2 className="mb-5">Travel & Accommodation</h2>
 
       {/* How to Reach */}
       <div className="row mb-5 align-items-center">
         <div className="col-md-6 mb-4 mb-md-0">
-          <div className="bg-glass p-4 text-white rounded shadow-sm h-100">
+          <div className="bg-glass p-4">
             <h4 className="fw-semibold mb-3">How to Reach IET Agra</h4>
             <p className="mb-2"><strong>By Train:</strong> Agra Cantt (AGC) is the nearest railway station, approx. 8 km from campus.</p>
             <p className="mb-2"><strong>By Road:</strong> Connected via NH-19 from Delhi and other major cities. Reliable bus and taxi services are available.</p>
@@ -17,7 +17,7 @@ const TravelScreen = () => {
         </div>
 
         <div className="col-md-6">
-          <div className="bg-glass p-4 text-white rounded shadow-sm h-100">
+          <div className="bg-glass p-4">
             <h4 className="fw-semibold mb-3">Accommodation Options</h4>
             <p className="mb-2">Participants are encouraged to book in advance due to the tourist season.</p>
             <ul className="mb-2">
@@ -31,7 +31,7 @@ const TravelScreen = () => {
       </div>
 
       {/* Local Transport */}
-      <div className="bg-glass p-4 text-white rounded shadow-sm mb-5">
+      <div className="bg-glass p-4 mb-5">
         <h4 className="fw-semibold mb-3">Local Transportation</h4>
         <p><strong>From Railway Station/Airport:</strong> Ola, Uber, and prepaid auto-rickshaws are available. Approx. ₹150–300 fare range.</p>
         <p><strong>During Conference:</strong> Dedicated campus shuttle service will run between key hotels and IET Agra.</p>
@@ -39,7 +39,7 @@ const TravelScreen = () => {
       </div>
 
       {/* Google Map Embed */}
-      <div className="bg-glass p-4 text-white rounded shadow-sm">
+      <div className="bg-glass p-4">
         <h4 className="fw-semibold mb-3">Campus Location</h4>
         <div className="ratio ratio-16x9">
           <iframe

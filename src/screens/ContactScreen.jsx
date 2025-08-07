@@ -16,8 +16,7 @@ const ContactScreen = () => {
   };
 
   return (
-    <main className="container">
-      <div className="container py-5">
+    <main className="container py-5">
         <h2 className="mb-4">Contact Us</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -57,7 +56,6 @@ const ContactScreen = () => {
             Send Message
           </button>
         </form>
-      </div>
     </main>
   );
 };

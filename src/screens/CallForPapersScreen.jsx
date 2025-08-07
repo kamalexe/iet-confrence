@@ -2,26 +2,12 @@ import React from 'react';
 
 const CallForPapersScreen = () => {
     return (
-        <main className='container'>
-            <h1 >Call for Papers</h1>
+        <main className='container py-5'>
+            <h2>Call for Papers</h2>
 
             <p className="text-lg mb-6 leading-relaxed">
                 The <strong>International Conference on the Future of Computer Science with AI (FCSAI-2025)</strong> invites original, high-quality research contributions that have not been published or submitted elsewhere. We aim to foster discussion on the latest advancements and future directions in computing and artificial intelligence.
             </p>
-{/* 
-            <section className="container bg-glass my-4 p-4">
-                <h2 className="mb-4">Topics of Interest</h2>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                    <li>Artificial Intelligence and Machine Learning</li>
-                    <li>Natural Language Processing</li>
-                    <li>Computer Vision and Image Processing</li>
-                    <li>Blockchain and Decentralized Applications</li>
-                    <li>Cybersecurity and Privacy</li>
-                    <li>Big Data and Cloud Computing</li>
-                    <li>IoT and Embedded Systems</li>
-                    <li>Human-Computer Interaction</li>
-                </ul>
-            </section> */}
 
             <section className="container bg-glass my-4 p-4">
                 <h2 className="mb-4">Important Dates</h2>

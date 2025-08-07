@@ -1,11 +1,11 @@
 import React from 'react';
-import placeholder from '../assets/placeholder-person.jpg';
+import MemberCard from "../components/MemberCard";
 
 const committeeMembers = [
   {
     name: 'Prof. Ashu Rani',
     image: '/committees/Prof. Ashu Rani.jpeg',
-    role: 'CHIEF PATRON',
+    role: 'Chief Patron',
     designation: 'Vice Chancellor, Dr. Bhimrao Ambedkar University, Agra',
   },
   {
@@ -62,48 +62,22 @@ const committeeMembers = [
 // ];
 
 const CommitteesScreen = () => {
-
   return (
-    <main className='container'>
-      <div className="p-4 rounded">
+    <main className="container py-5">
+      <div>
         <h2 className="mb-4 text-white">Organizing Committee</h2>
         <div className="row g-4">
           {committeeMembers.map((member, index) => (
             <div key={index} className="col-md-4">
-            <div className="container bg-glass h-100 text-center p-3 bg-transparent text-white">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="card-img-top mx-auto rounded-circle"
-                  style={{ width: '120px', height: '120px', objectFit: 'cover' }}
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = placeholder;
-                  }}
-                />
-                <div className="card-body">
-                  <p className="card-text" style={{ whiteSpace: 'pre-line' }}>{member.role}</p>
-                  <h5 className="card-title">{member.name}</h5>
-                  {member.designation && (
-                    <p className="card-text">{member.designation}</p>
-                  )}
-                </div>
-              </div>
+              <MemberCard
+                image={member.image}
+                name={member.name}
+                role={member.role}
+                designation={member.designation}
+                isSpecial={true}
+              />
             </div>
           ))}
-
-          {/* Accommodation & Food Committee */}
-          {/* <div className="col-12">
-            <div className="card bg-glass text-white border-0 shadow-sm h-100 text-center p-3 mt-4">
-              <div className="card-body">
-                <h5 className="card-title">Accommodation & Food Committee</h5>
-                {foodCommitteeMembers.map((member, idx) => (
-                  <p key={idx} className="card-text mb-1">{member.name}</p>
-                ))}
-              </div>
-            </div>
-          </div> */}
-
         </div>
       </div>
     </main>

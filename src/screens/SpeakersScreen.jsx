@@ -1,4 +1,4 @@
-import placeholder from '../assets/placeholder-person.jpg';
+import MemberCard from '../components/MemberCard';
 
 const speakers = [
   {
@@ -39,34 +39,21 @@ const speakers = [
   },
 ];
 
+
 const SpeakersScreen = () => {
   return (
-    <main className="container">
-      <div className="container py-5">
+    <main className="container py-5">
+      <div>
         <h2 className="mb-4 text-white">Speakers</h2>
         <div className="row g-4">
           {speakers.map((speaker, index) => (
             <div key={index} className="col-md-4">
-            <div className="container bg-glass h-100 text-center p-3 bg-transparent text-white">
-            <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  className="card-img-top mx-auto rounded-circle"
-                  style={{ width: '120px', height: '120px', objectFit: 'cover' }}
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = placeholder;
-                  }}
-                />
-                <div className="card-body mt-3">
-                  <p className="card-text mb-1">{speaker.role}</p>
-                  <h5 className="card-title">{speaker.name}</h5>
-                  {speaker.designation && (
-                    <p className="card-text small">{speaker.designation}</p>
-                  )}
-
-                </div>
-              </div>
+              <MemberCard
+                image={speaker.image}
+                name={speaker.name}
+                role={speaker.role}
+                designation={speaker.designation}
+              />
             </div>
           ))}
         </div>

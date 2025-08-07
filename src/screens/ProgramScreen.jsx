@@ -74,8 +74,7 @@ const programTracks = [
   
 const ProgramScreen = () => {
   return (
-    <main className="container">
-      <div className="p-4 rounded">
+    <main className="container py-5">
         <h2 className="mb-4">Conference Program Tracks</h2>
 
         <div className="accordion" id="programAccordion">
@@ -119,7 +118,7 @@ const ProgramScreen = () => {
             );
           })}
         </div>
-      </div>
+      
     </main>
   );
 };

@@ -111,7 +111,7 @@ const schedule = [
 
 export default function ScheduleScreen() {
   return (
-      <main className="container m-5">
+      <main className="container py-5">
       
       <div className="main-timeline">
         {schedule.map((daySchedule, index) =>
