@@ -1,4 +1,5 @@
 import React from 'react';
+import registerQR from '../assets/register_qr.png'; // adjust path as needed
 
 const RegistrationScreen = () => {
     return (
@@ -62,7 +63,30 @@ const RegistrationScreen = () => {
                             </tbody>
                         </table>
                     </div>
+
+
                 </section>
+
+                <section className="text-center">
+                    <h3 className="mb-3">Scan to Fill the Form</h3>
+                    <img
+                        src={registerQR}
+                        alt="Google Form QR Code"
+                        width="200"
+                        height="200"
+                        className="rounded shadow"
+                    />
+                    <p className="mt-2">
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open Form
+                        </a>
+                    </p>
+                </section>
+
 
             </div>
         </main>

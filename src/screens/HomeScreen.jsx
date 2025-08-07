@@ -16,43 +16,53 @@ const HomeScreen = () => {
     <main >
       {/* Carousel */}
       <div className="mb-5" style={{ marginTop: "-10rem", position: "relative" }}>
-  <div className="rounded shadow-sm position-relative">
-    <img
-      src={carousel1}
-      className="d-block w-100 carousel-img"
-      alt='ICFCSAI 2025'
-    />
+        <div className="rounded shadow-sm position-relative">
+          <img
+            src={carousel1}
+            className="d-block w-100 carousel-img"
+            alt="ICFCSAI 2025"
+          />
 
-    <div
-      className="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start position-absolute"
-      style={{
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        width: "80%",
-      }}
-    >
-      <h1
-        className="display-4 fw-bold text-shadow mb-2"
-        style={{ fontSize: "3rem", letterSpacing: "1px" }}
-      >
-        Welcome to
-      </h1>
-      <h1
-        className="display-4 fw-bold text-shadow mb-2"
-        style={{ fontSize: "3rem", letterSpacing: "1px" }}
-      >
-        <span style={{ color: "#00D8FF" }}>ICFCSAI 2025</span>
-      </h1>
-      <p
-        className="lead fw-medium text-light text-shadow"
-        style={{ fontSize: "1.25rem" }}
-      >
-        International Conference on Future of Computer Science with AI
-      </p>
-    </div>
-  </div>
-</div>
+          <div
+            className="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start position-absolute"
+            style={{
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "90%",
+            }}
+          >
+            <h1
+              className="fw-bold text-shadow text-light mb-1"
+              style={{
+                fontSize: "2.75rem",
+                letterSpacing: "0.5px",
+                lineHeight: "1.3",
+              }}
+            >
+              International Conference on <br className="d-none d-lg-block" />
+              Future of <span>Computer Science with AI</span>
+              <br className="d-none d-lg-block" />
+              <span>Theory, Practice, and Impact</span>
+            </h1>
+            
+            <h2
+              className="fw-bold text-shadow"
+              style={{
+                fontSize: "2rem",
+                color: "#00D8FF", // ✅ Corrected hex format
+                                marginTop: "0.5rem",
+              }}
+            >
+              (ICFCSAI-2025)
+            </h2>
+
+         
+          
+          </div>
+        </div>
+      </div>
+
 
 
       {/* About Section */}
@@ -63,7 +73,7 @@ const HomeScreen = () => {
             The <strong>International Conference on Future of Computer Science with AI: Theory, Practice, and Impact (FCSAI-2025)</strong> is a premier event that brings together leading minds from academia, industry, and research to explore the evolving landscape of Computer Science and Artificial Intelligence.
           </p>
           <p className="mb-3">
-            Hosted by the <strong>Institute of Engineering and Technology, Dr. Bhim Rao Ambedkar University, Agra</strong>, from <strong>25th to 27th September 2025</strong>, the conference aims to foster innovation, collaboration, and knowledge-sharing across disciplines.
+            Hosted by the <strong>Department of Computer Science & Engineering, Institute of Engineering & Technology, Dr. Bhimrao Ambedkar University, Agra</strong>, from <strong>25th to 27th September 2025</strong>, the conference aims to foster innovation, collaboration, and knowledge-sharing across disciplines.
           </p>
           <p className="mb-3">
             FCSAI-2025 will feature keynote speeches, technical paper presentations, and interactive sessions focused on emerging technologies, practical implementations, and the broader impact of AI on society.
