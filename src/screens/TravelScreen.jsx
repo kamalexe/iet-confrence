@@ -6,9 +6,9 @@ const TravelScreen = () => {
       <h2 className="mb-5">Travel & Accommodation</h2>
 
       {/* How to Reach */}
-      <div className="row mb-5 align-items-center">
-        <div className="col-md-6 mb-4 mb-md-0">
-          <div className="bg-glass p-4">
+      <div className="row mb-5 align-items-stretch">
+        <div className="col-md-6 mb-4 mb-md-0 d-flex">
+          <div className="bg-glass p-4 h-100 w-100">
             <h4 className="fw-semibold mb-3">How to Reach IET Agra</h4>
             <p className="mb-2"><strong>By Train:</strong> Agra Cantt (AGC) is the nearest railway station, approx. 8 km from campus.</p>
             <p className="mb-2"><strong>By Road:</strong> Connected via NH-19 from Delhi and other major cities. Reliable bus and taxi services are available.</p>
@@ -16,8 +16,8 @@ const TravelScreen = () => {
           </div>
         </div>
 
-        <div className="col-md-6">
-          <div className="bg-glass p-4">
+        <div className="col-md-6 d-flex">
+          <div className="bg-glass p-4 h-100 w-100">
             <h4 className="fw-semibold mb-3">Accommodation Options</h4>
             <p className="mb-2">Participants are encouraged to book in advance due to the tourist season.</p>
             <ul className="mb-2">
@@ -29,6 +29,7 @@ const TravelScreen = () => {
           </div>
         </div>
       </div>
+
 
       {/* Local Transport */}
       <div className="bg-glass p-4 mb-5">

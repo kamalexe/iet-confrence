@@ -7,6 +7,7 @@ const committeeMembers = [
     image: '/committees/Prof. Ashu Rani.jpeg',
     role: 'Chief Patron',
     designation: 'Vice Chancellor, Dr. Bhimrao Ambedkar University, Agra',
+    isSpecial : true,
   },
   {
     name: 'Prof. Manu Pratap Singh',
@@ -74,7 +75,7 @@ const CommitteesScreen = () => {
                 name={member.name}
                 role={member.role}
                 designation={member.designation}
-                isSpecial={true}
+                isSpecial={member?.isSpecial}
               />
             </div>
           ))}

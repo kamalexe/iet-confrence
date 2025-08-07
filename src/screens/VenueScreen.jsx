@@ -2,11 +2,11 @@ import React from "react";
 
 const VenueScreen = () => {
   return (
-    <main className='container'>
+    <main className="container py-5">
       <h2 className="mb-5">Venue Details</h2>
 
       {/* Venue Overview */}
-      <div className="bg-glass p-4 mb-5 text-white rounded shadow-sm">
+      <div className="bg-glass p-4 mb-5">
         <h4 className="fw-semibold mb-3">Institute of Engineering & Technology, Agra</h4>
         <p className="mb-2">
           The International Conference on Future of Computer Science with AI (FCSAI-2025) will be hosted at the <strong>Institute of Engineering & Technology (IET), Agra</strong>, a prestigious institution under Dr. A.P.J. Abdul Kalam Technical University (AKTU).
@@ -22,7 +22,7 @@ const VenueScreen = () => {
       {/* Address and Access */}
       <div className="row mb-5">
         <div className="col-md-6 mb-4 mb-md-0">
-          <div className="bg-glass p-4 text-white rounded shadow-sm h-100">
+          <div className="bg-glass p-4 h-100">
             <h5 className="fw-semibold mb-3">Venue Address</h5>
             <p className="mb-2">Institute of Engineering & Technology</p>
             <p className="mb-2">Khandari Campus, Agra – 282002</p>
@@ -31,7 +31,7 @@ const VenueScreen = () => {
         </div>
 
         <div className="col-md-6">
-          <div className="bg-glass p-4 text-white rounded shadow-sm h-100">
+          <div className="bg-glass p-4 h-100">
             <h5 className="fw-semibold mb-3">Nearby Landmarks</h5>
             <ul className="mb-0">
               <li>Agra Fort – 4.5 km</li>
@@ -44,7 +44,7 @@ const VenueScreen = () => {
       </div>
 
       {/* Map Embed */}
-      <div className="bg-glass p-4 text-white rounded shadow-sm">
+      <div className="bg-glass p-4">
         <h5 className="fw-semibold mb-3">Map Location</h5>
         <div className="ratio ratio-16x9">
           <iframe
