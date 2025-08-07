@@ -9,75 +9,56 @@ const HomeScreen = () => {
   const carouselImages = [
     {
       src: carousel1,
-      title: "Welcome to IET Conference",
-      desc: "Join the leading minds in technology and innovation.",
     },
   ];
 
   return (
-    <main >      {/* Carousel */}
+    <main >
+      {/* Carousel */}
+      <div className="mb-5" style={{ marginTop: "-10rem", position: "relative" }}>
+  <div className="rounded shadow-sm position-relative">
+    <img
+      src={carousel1}
+      className="d-block w-100 carousel-img"
+      alt='ICFCSAI 2025'
+    />
 
-
-      <div style={{ marginTop: "-10rem" }}>        <div
-        id="eventCarousel"
-        className="carousel slide mb-5"
-        data-bs-ride="carousel"
+    <div
+      className="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start position-absolute"
+      style={{
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: "80%",
+      }}
+    >
+      <h1
+        className="display-4 fw-bold text-shadow mb-2"
+        style={{ fontSize: "3rem", letterSpacing: "1px" }}
       >
-        <div className="carousel-indicators">
-          {carouselImages.map((_, idx) => (
-            <button
-              key={idx}
-              type="button"
-              data-bs-target="#eventCarousel"
-              data-bs-slide-to={idx}
-              className={idx === 0 ? "active" : ""}
-              aria-current={idx === 0 ? "true" : undefined}
-              aria-label={`Slide ${idx + 1}`}
-            />
-          ))}
-        </div>
+        Welcome to
+      </h1>
+      <h1
+        className="display-4 fw-bold text-shadow mb-2"
+        style={{ fontSize: "3rem", letterSpacing: "1px" }}
+      >
+        <span style={{ color: "#00D8FF" }}>ICFCSAI 2025</span>
+      </h1>
+      <p
+        className="lead fw-medium text-light text-shadow"
+        style={{ fontSize: "1.25rem" }}
+      >
+        International Conference on Future of Computer Science with AI
+      </p>
+    </div>
+  </div>
+</div>
 
-        <div className="carousel-inner rounded shadow-sm">
-          {carouselImages.map((img, idx) => (
-            <div
-              className={`carousel-item ${idx === 0 ? "active" : ""}`}
-              key={idx}
-            >
-              <img
-                src={img.src}
-                className="d-block w-100 carousel-img"
-                alt={img.title}
-              />
-              <div className="carousel-caption d-none d-md-block bg-glass bg-opacity-50 rounded">
-                <h5>{img.title}</h5>
-                <p>{img.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
 
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#eventCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" />
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#eventCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" />
-        </button>
-      </div>
-      </div>
       {/* About Section */}
       <section className="container">
         <div className="bg-glass text-white p-5 rounded shadow-sm">
-          <h2 className="fw-bold mb-3">About the Conference</h2>
+          <h2 className="mb-3">About the Conference</h2>
           <p className="mb-3">
             The <strong>International Conference on Future of Computer Science with AI: Theory, Practice, and Impact (FCSAI-2025)</strong> is a premier event that brings together leading minds from academia, industry, and research to explore the evolving landscape of Computer Science and Artificial Intelligence.
           </p>

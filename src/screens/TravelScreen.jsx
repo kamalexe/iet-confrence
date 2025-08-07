@@ -3,7 +3,7 @@ import React from "react";
 const TravelScreen = () => {
   return (
     <main className="container">
-      <h2 className="mb-5 fw-bold text-white">Travel & Accommodation</h2>
+      <h2 className="mb-5">Travel & Accommodation</h2>
 
       {/* How to Reach */}
       <div className="row mb-5 align-items-center">

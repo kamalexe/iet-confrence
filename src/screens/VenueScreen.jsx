@@ -3,7 +3,7 @@ import React from "react";
 const VenueScreen = () => {
   return (
     <main className='container'>
-      <h2 className="text-center text-white fw-bold mb-5">Venue Details</h2>
+      <h2 className="mb-5">Venue Details</h2>
 
       {/* Venue Overview */}
       <div className="bg-glass p-4 mb-5 text-white rounded shadow-sm">

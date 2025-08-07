@@ -4,7 +4,7 @@ const SubmissionInstructionsScreen = () => {
     return (
         <main className="container py-5">
             <div className="bg-glass p-5 rounded-4 shadow">
-                <h2 className="mb-4 text-white">Submission Guidelines</h2>
+                <h2 className="mb-4">Submission Guidelines</h2>
                 <p className="lead text-white-50">
                     Please read the instructions carefully prior to submitting.
                 </p>

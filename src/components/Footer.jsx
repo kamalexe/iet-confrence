@@ -1,31 +1,6 @@
 const Footer = () => {
   return (
     <footer className="text-center text-lg-start text-white">
-      <section className="d-flex justify-content-between p-4">
-        <div className="me-5">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <div>
-          <a href="#" className="text-white me-4">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" className="text-white me-4">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#" className="text-white me-4">
-            <i className="fab fa-google"></i>
-          </a>
-          <a href="#" className="text-white me-4">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" className="text-white me-4">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="#" className="text-white me-4">
-            <i className="fab fa-github"></i>
-          </a>
-        </div>
-      </section>
 <hr />
       <section>
         <div className="container text-center text-md-start mt-5">
@@ -34,15 +9,6 @@ const Footer = () => {
               <h6 className="text-uppercase fw-bold">Institute of Engineering & Technology, Agra</h6>
               <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} />
               <p>Dr. B. R. Ambedkar University, Agra </p>
-            </div>
-
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold">Products</h6>
-              <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} />
-              <p><a href="#!" className="text-white">MDBootstrap</a></p>
-              <p><a href="#!" className="text-white">MDWordPress</a></p>
-              <p><a href="#!" className="text-white">BrandFlow</a></p>
-              <p><a href="#!" className="text-white">Bootstrap Angular</a></p>
             </div>
 
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -66,9 +32,9 @@ const Footer = () => {
         </div>
       </section>
 
-      <div className="text-center p-3 bg-secondary bg-opacity-25">
-        © 2020 Copyright:
-        <a className="text-white" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      <div className="text-center p-3">
+        © 2025 Copyright:
+        <a className="text-white" href="https://www.linkedin.com/in/kamal-maurya/"> Kamal Maurya</a>
       </div>
     </footer>
   );

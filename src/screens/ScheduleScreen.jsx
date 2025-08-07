@@ -6,24 +6,34 @@ const schedule = [
     day: "September 25, 2025",
     sessions: [
       {
-        time: "09:00 AM – 10:00 AM",
-        title: "Inaugural Ceremony",
-        description: "Welcome address, lighting of the lamp, keynote by Chief Guest.",
+        time: "09:00 AM – 09:30 AM",
+        title: "Registration",
+        description: "Arrival, badge distribution, and delegate kit handover.",
       },
       {
-        time: "10:15 AM – 12:00 PM",
-        title: "Keynote Session 1",
-        description: "Future of AI in India – Prof. Raghunath Reddy (IISc Bangalore).",
+        time: "09:30 AM – 11:00 AM",
+        title: "Inaugural Session",
+        description: "Welcome address, lighting of the lamp, keynote speeches by dignitaries.",
       },
       {
-        time: "12:15 PM – 01:30 PM",
+        time: "11:00 AM – 11:30 AM",
+        title: "High Tea",
+        description: "Refreshments and networking break.",
+      },
+      {
+        time: "11:30 AM – 01:00 PM",
         title: "Track 1: AI & ML",
-        description: "Deep learning architectures and AI in education.",
+        description: "Sessions on deep learning, neural networks, and educational applications.",
       },
       {
-        time: "02:30 PM – 04:30 PM",
-        title: "Workshop: GenAI for Students",
-        description: "Hands-on session on ChatGPT, Gemini, Copilot tools.",
+        time: "01:00 PM – 02:00 PM",
+        title: "Lunch Break",
+        description: "Buffet lunch for all delegates and speakers.",
+      },
+      {
+        time: "02:00 PM – 03:30 PM",
+        title: "Track 2: Big Data & Analytics",
+        description: "Talks on real-time analytics, data pipelines, and case studies.",
       },
     ],
   },
@@ -31,24 +41,39 @@ const schedule = [
     day: "September 26, 2025",
     sessions: [
       {
-        time: "09:00 AM – 10:30 AM",
-        title: "Panel Discussion",
-        description: "Ethical AI & Regulations – Experts from Academia & Industry.",
-      },
-      {
-        time: "10:45 AM – 12:15 PM",
-        title: "Track 2: Big Data & Analytics",
-        description: "Real-time analytics and case study on climate prediction.",
-      },
-      {
-        time: "01:15 PM – 03:00 PM",
+        time: "10:00 AM – 11:00 AM",
         title: "Track 3: Robotics & Automation",
-        description: "Drone tech, autonomous vehicles, and manufacturing AI.",
+        description: "Exploring robotics, drones, and autonomous systems.",
       },
       {
-        time: "03:15 PM – 04:30 PM",
-        title: "Workshop: AI in Cybersecurity",
-        description: "Using AI for intrusion detection and secure infrastructure.",
+        time: "11:00 AM – 11:15 AM",
+        title: "Tea Break",
+        description: "Short break with refreshments.",
+      },
+      {
+        time: "11:15 AM – 01:00 PM",
+        title: "Track 4: Cybersecurity & AI",
+        description: "AI applications in threat detection, data privacy, and digital trust.",
+      },
+      {
+        time: "01:00 PM – 02:00 PM",
+        title: "Lunch Break",
+        description: "Lunch and networking session.",
+      },
+      {
+        time: "02:00 PM – 03:30 PM",
+        title: "Track 5: Blockchain & IoT",
+        description: "Sessions on smart contracts, sensor networks, and secure IoT.",
+      },
+      {
+        time: "03:30 PM – 05:00 PM",
+        title: "Track 6: Emerging Technologies",
+        description: "Quantum computing, AR/VR, HCI trends, and future tech outlook.",
+      },
+      {
+        time: "05:00 PM – 05:15 PM",
+        title: "Tea Break",
+        description: "Evening tea and informal interaction.",
       },
     ],
   },
@@ -56,19 +81,29 @@ const schedule = [
     day: "September 27, 2025",
     sessions: [
       {
-        time: "09:00 AM – 10:30 AM",
-        title: "Track 4: Blockchain & IoT",
-        description: "Smart contracts, edge computing, and secure IoT frameworks.",
+        time: "10:00 AM – 11:00 AM",
+        title: "Track 7: Education & AI",
+        description: "AI-powered education systems, assessments, and future classrooms.",
       },
       {
-        time: "10:45 AM – 12:30 PM",
-        title: "Track 5: Emerging Technologies",
-        description: "Quantum Computing, AR/VR, HCI & software engineering innovation.",
+        time: "11:00 AM – 11:15 AM",
+        title: "High Tea",
+        description: "Morning refreshments and networking.",
       },
       {
-        time: "01:30 PM – 03:00 PM",
+        time: "11:15 AM – 01:00 PM",
+        title: "Track 8: Industry Applications",
+        description: "AI in healthcare, finance, agriculture, and public systems.",
+      },
+      {
+        time: "01:00 PM – 02:00 PM",
+        title: "Lunch Break",
+        description: "Lunch served to all participants.",
+      },
+      {
+        time: "02:00 PM – 04:00 PM",
         title: "Valedictory Session",
-        description: "Award ceremony, vote of thanks, and closing remarks.",
+        description: "Awards, feedback, and official conference closure.",
       },
     ],
   },
@@ -76,7 +111,7 @@ const schedule = [
 
 export default function ScheduleScreen() {
   return (
-      <main className="container">
+      <main className="container m-5">
       
       <div className="main-timeline">
         {schedule.map((daySchedule, index) =>

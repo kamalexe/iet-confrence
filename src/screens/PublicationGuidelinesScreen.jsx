@@ -4,7 +4,7 @@ const PublicationGuidelinesScreen = () => {
     return (
         <main className="container py-5">
             <div className="bg-glass p-5 rounded-4 shadow">
-                <h2 className="mb-4 text-white">Publication Guidelines</h2>
+                <h2 className="mb-4">Publication Guidelines</h2>
                 <p className="lead text-white-50">
                     Please review the publication process carefully before submitting your paper.
                 </p>

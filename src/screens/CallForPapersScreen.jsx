@@ -8,9 +8,9 @@ const CallForPapersScreen = () => {
             <p className="text-lg mb-6 leading-relaxed">
                 The <strong>International Conference on the Future of Computer Science with AI (FCSAI-2025)</strong> invites original, high-quality research contributions that have not been published or submitted elsewhere. We aim to foster discussion on the latest advancements and future directions in computing and artificial intelligence.
             </p>
-
+{/* 
             <section className="container bg-glass my-4 p-4">
-                <h2 className="text-2xl font-semibold mb-4 text-indigo-300">Topics of Interest</h2>
+                <h2 className="mb-4">Topics of Interest</h2>
                 <ul className="list-disc pl-6 space-y-2 text-gray-300">
                     <li>Artificial Intelligence and Machine Learning</li>
                     <li>Natural Language Processing</li>
@@ -21,10 +21,10 @@ const CallForPapersScreen = () => {
                     <li>IoT and Embedded Systems</li>
                     <li>Human-Computer Interaction</li>
                 </ul>
-            </section>
+            </section> */}
 
             <section className="container bg-glass my-4 p-4">
-                <h2 className="text-2xl font-semibold mb-4 text-indigo-300">Important Dates</h2>
+                <h2 className="mb-4">Important Dates</h2>
                 <ul className="space-y-2 text-gray-300">
                     <li><strong>Submission Deadline:</strong> August 31, 2025</li>
                     <li><strong>Notification of Acceptance:</strong> September 10, 2025</li>
@@ -33,7 +33,7 @@ const CallForPapersScreen = () => {
             </section>
 
             <section className="container bg-glass my-4 p-4">
-                <h2 className="text-2xl font-semibold mb-4 text-indigo-300">Submission Guidelines</h2>
+                <h2 className="mb-4">Submission Guidelines</h2>
                 <ul className="list-disc pl-6 space-y-2 text-gray-300">
                     <li>Papers must adhere to the IEEE conference formatting guidelines.</li>
                     <li>Maximum length: 6 pages (including references).</li>
