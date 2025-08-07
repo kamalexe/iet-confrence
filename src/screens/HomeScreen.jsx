@@ -70,13 +70,13 @@ const HomeScreen = () => {
         <div className="bg-glass p-5">
           <h2 className="mb-3">About the Conference</h2>
           <p className="mb-3">
-            The <strong>International Conference on Future of Computer Science with AI: Theory, Practice, and Impact (FCSAI-2025)</strong> is a premier event that brings together leading minds from academia, industry, and research to explore the evolving landscape of Computer Science and Artificial Intelligence.
+            The <strong>International Conference on Future of Computer Science with AI: Theory, Practice, and Impact (ICFCSAI-2025)</strong> is a premier event that brings together leading minds from academia, industry, and research to explore the evolving landscape of Computer Science and Artificial Intelligence.
           </p>
           <p className="mb-3">
             Hosted by the <strong>Department of Computer Science & Engineering, Institute of Engineering & Technology, Dr. Bhimrao Ambedkar University, Agra</strong>, from <strong>25th to 27th September 2025</strong>, the conference aims to foster innovation, collaboration, and knowledge-sharing across disciplines.
           </p>
           <p className="mb-3">
-            FCSAI-2025 will feature keynote speeches, technical paper presentations, and interactive sessions focused on emerging technologies, practical implementations, and the broader impact of AI on society.
+          ICFCSAI-2025 will feature keynote speeches, technical paper presentations, and interactive sessions focused on emerging technologies, practical implementations, and the broader impact of AI on society.
           </p>
           <p className="mb-4">
             The event provides a vibrant platform for researchers, scientists, academicians, industrialists, and students to present their work, gain insights, and build lasting collaborations that can shape the future of technology. By highlighting both theoretical advancements and real-world applications, the conference is committed to driving impactful research and inspiring the next generation of innovators in Computer Science and AI.
