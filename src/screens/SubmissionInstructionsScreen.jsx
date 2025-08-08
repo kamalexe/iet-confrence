@@ -25,7 +25,7 @@ const SubmissionInstructionsScreen = () => {
                         </li>
                         <li>
                             Please email{" "}
-                            <a href="mailto:icfcsai2025@gmail.com" className="text-primary">
+                            <a href="mailto:icfcsai2025@gmail.com">
                                 icfcsai2025@gmail.com
                             </a>{" "}
                             if you have any queries.
@@ -37,7 +37,6 @@ const SubmissionInstructionsScreen = () => {
                                 download
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-primary"
                             >
                                 Word Format (.docx)
                             </a>
@@ -53,7 +52,6 @@ const SubmissionInstructionsScreen = () => {
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-primary"
                         >
                             Conference Submission System
                         </a>.

@@ -33,11 +33,11 @@ const HomeScreen = () => {
             }}
           >
             <h1
-              className="fw-bold text-shadow text-light mb-1"
+              className="fw-bold text-shadow text-light mb-3"
               style={{
-                fontSize: "2.75rem",
+                fontSize: "clamp(2rem, 5vw, 3.25rem)",
                 letterSpacing: "0.5px",
-                lineHeight: "1.3",
+                lineHeight: "1.4",
               }}
             >
               International Conference on <br className="d-none d-lg-block" />
@@ -47,25 +47,27 @@ const HomeScreen = () => {
             </h1>
 
             <h2
-              className="fw-bold text-shadow"
+              className="fw-semibold text-shadow"
               style={{
-                fontSize: "2rem",
-                color: "#00D8FF", // ✅ Corrected hex format
-                marginTop: "0.5rem",
+                fontSize: "1.75rem",
+                color: "var(--bs-primary)",
+                marginBottom: "0.5rem",
               }}
             >
               (ICFCSAI-2025)
             </h2>
 
-            <h2
-              className=" text-shadow"
+            <p
+              className="text-shadow text-light mb-4"
               style={{
-                // fontSize: "2rem",
-
+                fontSize: "1.25rem",
+                fontWeight: 400,
+                letterSpacing: "0.2px",
               }}
             >
-              25th - 27th September 2025
-            </h2>
+              25<sup>th</sup> – 27<sup>th</sup> September 2025
+            </p>
+
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -87,8 +89,6 @@ const HomeScreen = () => {
                 />
               </svg>
             </a>
-
-
           </div>
         </div>
       </div>

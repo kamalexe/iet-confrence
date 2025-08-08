@@ -27,7 +27,7 @@ const PublicationGuidelinesScreen = () => {
                     <ol className="">
                         <li>
                             Authors must submit their papers via the submission system or by email to:{" "}
-                            <a href="mailto:icfcsai2025@gmail.com" className="text-primary">icfcsai2025@gmail.com</a>. 
+                            <a href="mailto:icfcsai2025@gmail.com">icfcsai2025@gmail.com</a>. 
                             Preferred formats: Word (.docx) or PDF.
                         </li>
                         <li>
@@ -38,7 +38,7 @@ const PublicationGuidelinesScreen = () => {
                         </li>
                         <li>
                             Upon acceptance, authors must pay the registration fee and send the following documents to{" "}
-                            <a href="mailto:icfcsai2025@gmail.com" className="text-primary">icfcsai2025@gmail.com</a>: final manuscript (PDF and Word), registration form, and payment proof.
+                            <a href="mailto:icfcsai2025@gmail.com">icfcsai2025@gmail.com</a>: final manuscript (PDF and Word), registration form, and payment proof.
                         </li>
                         <li>
                             The final version should be proofread, properly typeset, and submitted before the deadline.

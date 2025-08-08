@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold">Institute of Engineering & Technology, Agra</h6>
-              <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} />
+              {/* <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} /> */}
               <p>Dr. Bhimrao Ambedkar University, Agra</p>
             </div>
 
