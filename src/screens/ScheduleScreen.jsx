@@ -111,18 +111,18 @@ const schedule = [
 
 export default function ScheduleScreen() {
   return (
-      <main className="container py-5">
-      
+    <main className="container py-5">
+
       <div className="main-timeline">
         {schedule.map((daySchedule, index) =>
           daySchedule.sessions.map((session, sessionIndex) => (
             <div
               className={`timeline ${sessionIndex % 2 === 0 ? "left" : "right"}`}
-              key={`${daySchedule.day}-${session.title}`}
+              key={`${daySchedule.day}-${session.title}-${sessionIndex}`}
             >
               <div className="container bg-glass">
                 <MDBCardBody className="p-4">
-                  <h5 className="text-primary mb-2">{daySchedule.day}</h5>
+                  <h5 className="mb-2">{daySchedule.day}</h5>
                   <h6 className="fw-bold">{session.time}</h6>
                   <h5>{session.title}</h5>
                   <p className="mb-0">{session.description}</p>
@@ -132,7 +132,7 @@ export default function ScheduleScreen() {
           ))
         )}
       </div>
-      </main>
+    </main>
     // </MDBContainer>
   );
 }

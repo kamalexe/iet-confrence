@@ -1,4 +1,7 @@
-/* Enable dark theme by default */
+/* -------------------------------------------------- */
+/* ========== GLOBAL ROOT STYLES (Dark Mode) ========= */
+/* -------------------------------------------------- */
+
 :root {
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
@@ -16,37 +19,44 @@
   --bs-primary: rgb(0, 216, 255);
 }
 
+/* ---------------------------------------- */
+/* ========== BASE ELEMENT STYLES ========= */
+/* ---------------------------------------- */
+
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  color: #ffffff;
   background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #000000);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
-  color: #ffffff;
 }
 
+main {
+  margin-top: 1rem;
+  margin-bottom: 1rem!important ;
+}
+
+/* Animate gradient background */
 @keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
+/* --------------------------------------- */
+/* ========== LINKS & BUTTONS ============ */
+/* --------------------------------------- */
 
-/* Optional global a and button styles for dark mode */
 a {
   font-weight: 500;
   color: #91a4ff;
   text-decoration: none;
 }
+
 a:hover {
   color: #c2cfff;
 }
@@ -57,7 +67,6 @@ a:focus-visible,
   outline: 3px solid #00d8ff;
   outline-offset: 2px;
 }
-
 
 button {
   border-radius: 8px;
@@ -71,229 +80,17 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-main {
-  margin-top: 1rem;
-  margin-bottom: 1rem!important ;
-}
-
-/* Carousel image fix */
-.carousel-img {
-  height: 800px;
-  object-fit: cover;
-}
-
-/* Glassmorphism background */
-.bg-glass {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-
-/* Themed table */
-.table-glass th,
-.table-glass td {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Dark inputs */
-.form-control.bg-glass-input {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.form-control.bg-glass-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/*  iframe styling */
-.map-frame {
-  border: none;
-  border-radius: 0.75rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Accordion Header */
-.accordion-button {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #ffffff;
-  font-weight: 500;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: none;
-  border-radius: 0.75rem !important;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
-  box-shadow: 0 0 0 2px #646cff;
-}
-
-/* Remove default arrow */
-.accordion-button::after {
-  filter: invert(1);
-}
-
-/* Accordion Body */
-.accordion-body {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #ffffff;
-  border-radius: 0.75rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  margin-top: 0.5rem;
-}
-
-/* Accordion Item Container */
-.accordion-item {
-  background-color: transparent;
-  border: none;
-  margin-bottom: 1rem;
-}
-
-/* Smooth open/close */
-.accordion-collapse {
-  transition: all 0.35s ease-in-out;
-}
-
-/* Time line */
-
-/* The actual timeline (the vertical ruler) */
-.main-timeline {
-  position: relative;
-}
-
-/* The actual timeline (the vertical ruler) */
-.main-timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: #939597;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.timeline {
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -13px;
-  background-color: #939597;
-  border: 5px solid #f5df4d;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  padding: 0px 40px 20px 0px;
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  padding: 0px 0px 20px 40px;
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -12px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .main-timeline::after {
-    left: 31px;
-  }
-
-  /* Full-width containers */
-  .timeline {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  /* Make sure that all arrows are pointing leftwards */
-  .timeline::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    /* border-color: transparent white transparent transparent; */
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 18px;
-  }
-
-  .left::before {
-    right: auto;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
-}
-
-/* Button */
-
+/* Gradient CTA Button */
 .btn-gradient {
   color: #fff;
   border: 1px solid transparent;
@@ -317,8 +114,6 @@ main {
   transform: translateY(-2px);
 }
 
-
-
 .btn-gradient svg {
   transition: transform 0.3s ease;
 }
@@ -327,12 +122,39 @@ main {
   transform: translateX(6px);
 }
 
+/* -------------------------------------- */
+/* ========== NAVBAR & DROPDOWN ========= */
+/* -------------------------------------- */
 
-/* dropdown */
+.navbar .nav-link,
+.dropdown-item {
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active,
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  color: #ffffff !important;
+  box-shadow:
+    inset 0 0 5px rgba(255, 255, 255, 0.2),
+    0 4px 12px rgba(255, 255, 255, 0.05),
+    0 0 20px rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+  transform: scale(1.02);
+}
+
+/* Dropdown Menu Glassmorphism */
 .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.08) !important;
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 0.75rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
@@ -348,64 +170,201 @@ main {
 .dropdown-item:hover,
 .dropdown-item:focus {
   background-color: rgba(255, 255, 255, 0.15);
-  color: #fff;
   border-radius: 0.5rem;
 }
 
+/* ---------------------------------- */
+/* ========== COMPONENTS ============ */
+/* ---------------------------------- */
 
-/* Hover glass UI */
-.navbar .nav-link:hover,
-.navbar .nav-link.active,
-.dropdown-item:hover,
-.dropdown-item.active {
-  background-color: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #fff !important;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-}
-
-/* Active link bold and highlight effect */
-.navbar .nav-link.active,
-.dropdown-item.active {
-  font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}/* Shared nav link and dropdown item styles */
-.navbar .nav-link,
-.dropdown-item {
-  transition: all 0.3s ease;
-  border-radius: 1rem; /* More rounded = more "droplet" */
-  padding: 0.5rem 1rem;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Hover & active water droplet effect */
-.navbar .nav-link:hover,
-.navbar .nav-link.active,
-.dropdown-item:hover,
-.dropdown-item.active {
+/* Glass Background */
+.bg-glass {
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: #ffffff !important;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-  box-shadow:
-    inset 0 0 5px rgba(255, 255, 255, 0.2),
-    0 4px 12px rgba(255, 255, 255, 0.05),
-    0 0 20px rgba(255, 255, 255, 0.08);
-  
+/* Input Field */
+.form-control.bg-glass-input {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-control.bg-glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Tables */
+.table-glass th,
+.table-glass td {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Iframe Map */
+.map-frame {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel */
+.carousel-img {
+  height: 800px;
+  object-fit: cover;
+}
+
+/* Accordion */
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 0.75rem !important;
+  border: none;
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 2px #646cff;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  font-weight: 600;
+  margin-top: 0.5rem;
 }
 
-/* Optional: slight scale on hover for droplet feel */
-.navbar .nav-link:hover,
-.dropdown-item:hover {
-  transform: scale(1.02);
+.accordion-collapse {
+  transition: all 0.35s ease-in-out;
 }
 
+/* --------------------------------------- */
+/* ========== TIMELINE SECTION =========== */
+/* --------------------------------------- */
+
+.main-timeline {
+  position: relative;
+}
+
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #939597;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #939597;
+  border: 5px solid #f5df4d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+.right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  z-index: 1;
+}
+
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  z-index: 1;
+}
+
+.right::after {
+  left: -12px;
+}
+
+/* Responsive Timeline */
+@media screen and (max-width: 600px) {
+  .main-timeline::after {
+    left: 31px;
+  }
+
+  .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline::before {
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+  }
+
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
+
+  .left::before {
+    right: auto;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+
+/* ---------------------------------------- */
+/* ========== UTILITY CLASSES ============= */
+/* ---------------------------------------- */
 
 .text-shadow {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
