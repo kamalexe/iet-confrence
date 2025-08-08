@@ -16,7 +16,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --bs-primary: rgb(0, 216, 255);
+  --bs-body-bg: #0e0e10;
+  --bs-body-color: #f8f9fa;
+  --bs-primary: #7F5CFF;
+  --bs-secondary: #adb5bd;
+  --bs-border-color: rgba(255, 255, 255, 0.125);
+  --bs-border-radius: 0.5rem;
+  --bs-box-shadow: 0 0.25rem 1rem rgba(127, 92, 255, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(10px);
 }
 
 /* ---------------------------------------- */
@@ -29,15 +37,16 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  color: #ffffff;
+  color: var(--bs-body-color);
   background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #000000);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
+  font-family: 'Inter', sans-serif;
 }
 
 main {
   margin-top: 1rem;
-  margin-bottom: 1rem!important ;
+  margin-bottom: 1rem !important;
 }
 
 /* Animate gradient background */
@@ -53,18 +62,18 @@ main {
 
 a {
   font-weight: 500;
-  color: #91a4ff;
+  color: var(--bs-primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: #c2cfff;
+  color: var(--bs-primary);
 }
 
 a:focus-visible,
 .nav-link:focus-visible,
 .dropdown-item:focus-visible {
-  outline: 3px solid #00d8ff;
+  outline: 3px solid var(--bs-primary);
   outline-offset: 2px;
 }
 
@@ -76,13 +85,13 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1f1f1f;
-  color: #ffffff;
+  color: var(--bs-body-color);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: var(--bs-primary);
 }
 
 button:focus,
@@ -103,14 +112,13 @@ button:focus-visible {
   gap: 0.5rem;
   height: 48px;
   min-width: 200px;
-  background: linear-gradient(to right, #00d8ffcc, #00bfffcc);
-  box-shadow: 0 4px 20px rgba(0, 216, 255, 0.2);
+  background: linear-gradient(to right, var(--bs-primary), #5E3AFF);
+  box-shadow: var(--bs-box-shadow);
   transition: all 0.3s ease;
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(to right, #00f0ff, #00aaff);
-  box-shadow: 0 6px 30px rgba(0, 216, 255, 0.35);
+  background: linear-gradient(to right, #9d7dff, #674aff);
   transform: translateY(-2px);
 }
 
@@ -126,8 +134,14 @@ button:focus-visible {
 /* ========== NAVBAR & DROPDOWN ========= */
 /* -------------------------------------- */
 
-.navbar .nav-link,
-.dropdown-item {
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.navbar .nav-link {
+  color: var(--bs-body-color);
   transition: all 0.3s ease;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
@@ -148,21 +162,22 @@ button:focus-visible {
     0 0 20px rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   font-weight: 600;
+  border-radius: 0.75rem;
   transform: scale(1.02);
 }
 
 /* Dropdown Menu Glassmorphism */
 .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.08) !important;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--bs-border-color);
   border-radius: 0.75rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   padding: 0.5rem 0;
 }
 
 .dropdown-item {
-  color: #fff;
+  color: var(--bs-body-color);
   padding: 0.5rem 1rem;
   transition: background-color 0.2s ease;
 }
@@ -179,29 +194,43 @@ button:focus-visible {
 
 /* Glass Background */
 .bg-glass {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border-radius: var(--bs-border-radius);
+  border: 1px solid var(--bs-border-color);
+  box-shadow: var(--bs-box-shadow);
+  color: var(--bs-body-color);
 }
 
 /* Input Field */
 .form-control.bg-glass-input {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--bs-body-color);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
 }
 
-.form-control.bg-glass-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.2rem rgba(127, 92, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Tables */
 .table-glass th,
 .table-glass td {
   background-color: rgba(255, 255, 255, 0.15) !important;
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--bs-body-color);
+  border-color: var(--bs-border-color);
+}
+
+.timeline-dot,
+.carousel-indicators [data-bs-target] {
+  background-color: var(--bs-primary);
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
 }
 
 /* Iframe Map */
@@ -364,8 +393,12 @@ button:focus-visible {
 
 /* ---------------------------------------- */
 /* ========== UTILITY CLASSES ============= */
-/* ---------------------------------------- */
-
+/* -*/
 .text-shadow {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.bg-transparent{
+  background-color: transparent;
+  box-shadow:none
 }

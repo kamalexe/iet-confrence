@@ -68,7 +68,7 @@ const HomeScreen = () => {
               25<sup>th</sup> – 27<sup>th</sup> September 2025
             </p>
 
-            <a
+            <button
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gradient text-shadow"
@@ -88,7 +88,7 @@ const HomeScreen = () => {
                   d="M10.146 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 1 1-.708-.708L12.293 8H2.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708z"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </div>

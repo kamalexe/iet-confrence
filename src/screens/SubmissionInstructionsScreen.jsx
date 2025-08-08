@@ -49,9 +49,9 @@ const SubmissionInstructionsScreen = () => {
                     <p className="">
                         Please upload your abstract or full paper to{" "}
                         <a
-                            href="#"
                             target="_blank"
                             rel="noopener noreferrer"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform" 
                         >
                             Conference Submission System
                         </a>.
