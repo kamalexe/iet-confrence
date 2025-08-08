@@ -13,7 +13,7 @@ const committeeMembers = [
     name: 'Prof. Manu Pratap Singh',
     image: '/committees/Prof. Manu Pratap Singh.jpeg',
     role: 'Patron',
-    designation: 'Director, Institute of Engineering and Technology, Swami Vivekananda Campus, Khandari, Agra',
+    designation: 'Director, Institute of Engineering and Technology, Khandari, Agra',
   },
   {
     name: 'Dr. Rajesh Lavania',
@@ -28,7 +28,7 @@ const committeeMembers = [
   },
   {
     name: 'Dr. Pragya Kabra',
-    image: '/committees/Dr. Pragya Kabra.jpeg',
+    image: '/committees/Dr. Pragya Kabra.jpg',
     role: 'Program Secretary',
   },
   {

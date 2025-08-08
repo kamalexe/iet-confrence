@@ -1,4 +1,5 @@
 import React from 'react';
+import registerQR from '../assets/register_qr.png';
 
 const CallForPapersScreen = () => {
     return (
@@ -21,7 +22,7 @@ const CallForPapersScreen = () => {
             <section className="container bg-glass my-4 p-4">
                 <h2 className="mb-4">Submission Guidelines</h2>
                 <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                    <li>Use two-column format, typically in US Letter size (8.5” x 11”).</li>       
+                    <li>Use two-column format, typically in US Letter size (8.5” x 11”).</li>
                     <li>Font: Times New Roman, size 10-point.</li>
                     <li>Margins: 0.75 inches on all sides (varies slightly by journal/conference).</li>
                     <li>
@@ -39,15 +40,25 @@ const CallForPapersScreen = () => {
                 </ul>
             </section>
 
-
-            <button
-                href="https://example.com/submission-portal"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-gradient w-100">
-                Submit Your Paper
-            </button>
-
+            <section className="text-center">
+                <h3 className="mb-3">Scan to Fill the Form</h3>
+                <img
+                    src={registerQR}
+                    alt="Google Form QR Code"
+                    width="200"
+                    height="200"
+                    className="rounded shadow"
+                />
+                <p className="mt-2">
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Open Form
+                    </a>
+                </p>
+            </section>
 
 
         </main>

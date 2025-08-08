@@ -13,6 +13,19 @@ const speakers = [
     image: '/speakers/Dr. Razeale Resultay.jpeg',
     designation: 'Pangasinan State University (PSU), Philippines',
   },
+  
+  {
+    name: 'Rex B. Basuel',
+    role: 'Center Director',
+    image: '/speakers/Rex B. Basuel.jpg',
+    designation: 'Pangasinan State University (PSU), Philippines',
+  },
+  {
+    name: 'Dr. Sanghyuk Lee',
+    role: 'Professor',
+    image: '/speakers/Sanghyuk Lee.jpg',
+    designation: 'School of Engineering, New Uzbekistan University',
+  },
   {
     name: 'Prof. R.K Agrawal',
     role: 'Professor',

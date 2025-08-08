@@ -41,24 +41,54 @@ const HomeScreen = () => {
               }}
             >
               International Conference on <br className="d-none d-lg-block" />
-              Future of <span>Computer Science with AI</span>
+              Future of <span>Computer Science with AI:</span>
               <br className="d-none d-lg-block" />
               <span>Theory, Practice, and Impact</span>
             </h1>
-            
+
             <h2
               className="fw-bold text-shadow"
               style={{
                 fontSize: "2rem",
                 color: "#00D8FF", // ✅ Corrected hex format
-                                marginTop: "0.5rem",
+                marginTop: "0.5rem",
               }}
             >
               (ICFCSAI-2025)
             </h2>
 
-         
-          
+            <h2
+              className=" text-shadow"
+              style={{
+                // fontSize: "2rem",
+
+              }}
+            >
+              25th - 27th September 2025
+            </h2>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gradient text-shadow"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform"
+            >
+              Register Now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                className="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.146 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 1 1-.708-.708L12.293 8H2.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </a>
+
+
           </div>
         </div>
       </div>
@@ -76,7 +106,7 @@ const HomeScreen = () => {
             Hosted by the <strong>Department of Computer Science & Engineering, Institute of Engineering & Technology, Dr. Bhimrao Ambedkar University, Agra</strong>, from <strong>25th to 27th September 2025</strong>, the conference aims to foster innovation, collaboration, and knowledge-sharing across disciplines.
           </p>
           <p className="mb-3">
-          ICFCSAI-2025 will feature keynote speeches, technical paper presentations, and interactive sessions focused on emerging technologies, practical implementations, and the broader impact of AI on society.
+            ICFCSAI-2025 will feature keynote speeches, technical paper presentations, and interactive sessions focused on emerging technologies, practical implementations, and the broader impact of AI on society.
           </p>
           <p className="mb-4">
             The event provides a vibrant platform for researchers, scientists, academicians, industrialists, and students to present their work, gain insights, and build lasting collaborations that can shape the future of technology. By highlighting both theoretical advancements and real-world applications, the conference is committed to driving impactful research and inspiring the next generation of innovators in Computer Science and AI.

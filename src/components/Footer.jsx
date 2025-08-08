@@ -39,13 +39,15 @@ const Footer = () => {
                 </a>
               </p>
               <p>
+              
                 <a href="tel:+9173551 50794" className="text-white text-decoration-none">
-                  +9173551 50794
+                  +9173551 50794 (Dr. Ganesh Chandra) 
                 </a>
               </p>
-              <p>
+
+              <p> 
                 <a href="tel:+919457250534" className="text-white text-decoration-none">
-                  +91 94572 50534
+                  +91 94572 50534 (Dr. Pragya Kabra)
                 </a>
               </p>
 
