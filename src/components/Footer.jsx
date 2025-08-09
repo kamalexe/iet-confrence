@@ -11,15 +11,25 @@ const Footer = () => {
               <p>Dr. Bhimrao Ambedkar University, Agra</p>
             </div>
 
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div className="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold">Useful Links</h6>
-              <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} />
-              <p><a className="text-white" href="/pdfs/paper-template.docx" download>Download Paper Template</a></p>
-              <p><a className="text-white" href="/pdfs/guide.docx" download>Download Submission Guidelines</a></p>
-              <p><a className="text-white" href="/pdfs/ICFCSAI-2025 Brochure.pdf" target="_blank" rel="noopener noreferrer"> ICFCSAI-2025 Brochure</a></p>
-              <p><a className="text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform" target="_blank">Registion Form</a></p>
-              <p><a className="text-white" href="/contact">Help</a></p>
+              <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "120px", height: "2px" }} />
+
+              <div className="row">
+                <div className="col-12 col-lg-6 d-flex flex-column">
+                  <p><a className="text-white" href="/pdfs/paper-template.docx" download>Download Paper Template</a></p>
+                  <p><a className="text-white" href="/pdfs/guide.docx" download>Download Submission Guidelines</a></p>
+                  <p><a className="text-white" href="/pdfs/ICFCSAI-2025 Brochure.pdf" target="_blank" rel="noopener noreferrer">ICFCSAI-2025 Brochure</a></p>
+                </div>
+                <div className="col-12 col-lg-6 d-flex flex-column">
+                  <p><a className="text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform" target="_blank">Registration Form</a></p>
+                  <p><a className="text-white" href="https://dbrau.ac.in/" target="_blank">Dr. Bhimrao Ambedkar University, Agra</a></p>
+                  <p><a className="text-white" href="/contact">Help</a></p>
+                </div>
+              </div>
             </div>
+
+
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold">Contact</h6>
@@ -39,13 +49,13 @@ const Footer = () => {
                 </a>
               </p>
               <p>
-              
+
                 <a href="tel:+9173551 50794" className="text-white text-decoration-none">
-                  +9173551 50794 (Dr. Ganesh Chandra) 
+                  +9173551 50794 (Dr. Ganesh Chandra)
                 </a>
               </p>
 
-              <p> 
+              <p>
                 <a href="tel:+919457250534" className="text-white text-decoration-none">
                   +91 94572 50534 (Dr. Pragya Kabra)
                 </a>

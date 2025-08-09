@@ -6,20 +6,20 @@ const committeeMembers = [
     name: 'Prof. Ashu Rani',
     image: '/committees/Prof. Ashu Rani.jpeg',
     role: 'Chief Patron',
-    designation: 'Vice Chancellor, Dr. Bhimrao Ambedkar University, Agra',
+    designation: 'Vice Chancellor,<br> Dr. Bhimrao Ambedkar University, Agra',
     isSpecial : true,
   },
   {
     name: 'Prof. Manu Pratap Singh',
     image: '/committees/Prof. Manu Pratap Singh.jpeg',
     role: 'Patron',
-    designation: 'Director, Institute of Engineering and Technology, Khandari, Agra',
+    designation: 'Director,<br> Institute of Engineering and Technology, Khandari, Agra',
   },
   {
     name: 'Dr. Rajesh Lavania',
     image: '/committees/Dr. Rajesh Lavania.png',
     role: 'Convenor',
-    designation: 'Head Incharge, Department of Computer Science and Engineering',
+    designation: 'Head Incharge,<br> Department of Computer Science and Engineering',
   },
   {
     name: 'Dr. Ganesh Chandra',

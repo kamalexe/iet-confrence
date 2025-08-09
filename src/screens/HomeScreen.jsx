@@ -6,12 +6,6 @@ import carousel3 from "../assets/college_tour.jpg";
 
 const HomeScreen = () => {
 
-  const carouselImages = [
-    {
-      src: carousel1,
-    },
-  ];
-
   return (
     <main >
       {/* Carousel */}
