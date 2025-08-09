@@ -1,14 +1,25 @@
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
-
+import { useState, useEffect } from "react";
+import { calculateTimeLeft } from "../utils/calculateTimeLeft";
 const Navbar = () => {
   const location = useLocation();
 
   const isCallForActive = ["/committees", "/program"].includes(location.pathname);
-  const isCityActive = ["/venue", "/program"].includes(location.pathname); 
+  const isCityActive = ["/venue", "/program"].includes(location.pathname);
+  const targetDateString = "2025-09-15T00:00:00";
+
+  const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft(targetDateString));
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft(targetDateString));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDateString]);
 
   return (
-    <nav className="m-2 navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top top-5" style={{top: "1rem", zIndex: 2000 }}>
+    <nav className="m-2 navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top top-5" style={{ top: "1rem", zIndex: 2000 }}>
       <div className="container">
         {/* Brand */}
         <NavLink className="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" to="/">
@@ -74,8 +85,8 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-  {/* Information Dropdown */}
-            <li className={`nav-item dropdown ${isCallForActive ? "active" : ""}`}>
+            {/* Author Dropdown */}
+            <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle fw-semibold"
                 href="#"
@@ -94,16 +105,17 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink className="dropdown-item" to="/submission-instructions">
-                  Submission Instructions
+                    Submission Instructions
                   </NavLink>
-                </li><li>
+                </li>
+                <li>
                   <NavLink className="dropdown-item" to="/publication-guidelines">
-                  Publication Guidelines
+                    Publication Guidelines
                   </NavLink>
                 </li>
                 <li>
                   <NavLink className="dropdown-item" to="/registration">
-                  Registration 
+                    Registration
                   </NavLink>
                 </li>
               </ul>
@@ -141,29 +153,20 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* Social Icons */}
-          <ul className="navbar-nav d-flex flex-row gap-2">
-            <li className="nav-item">
-              <a className="nav-link text-white" href="https://www.youtube.com/@iet" target="_blank" rel="noreferrer">
-                <i className="fab fa-youtube fs-5"></i>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="https://www.facebook.com/iet" target="_blank" rel="noreferrer">
-                <i className="fab fa-facebook-f fs-5"></i>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="https://twitter.com/iet" target="_blank" rel="noreferrer">
-                <i className="fab fa-twitter fs-5"></i>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="https://github.com/iet" target="_blank" rel="noreferrer">
-                <i className="fab fa-github fs-5"></i>
-              </a>
+          {/*Countdown */}
+          <ul className="navbar-nav d-flex flex-row flex-wrap flex-lg-row gap-2 align-items-center justify-content-center justify-content-lg-end w-100">
+            <li className="nav-item text-white fw-bold small px-2 py-1 rounded">
+              <div className="col text-center">
+                {timeLeft.total > 0
+                  ? `${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
+                  : ""}
+                <br />
+                {timeLeft.total > 0 ? "Remain time to register" : ""}
+              </div>
             </li>
           </ul>
+
+
         </div>
       </div>
     </nav>
