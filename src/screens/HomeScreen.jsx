@@ -62,11 +62,12 @@ const HomeScreen = () => {
               25<sup>th</sup> – 27<sup>th</sup> September 2025
             </p>
 
-            <button
+            <a
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gradient text-shadow"
               href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform"
+              title="Registration starts from 15 Sept 2025"
             >
               Register Now
               <svg
@@ -82,7 +83,8 @@ const HomeScreen = () => {
                   d="M10.146 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 1 1-.708-.708L12.293 8H2.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708z"
                 />
               </svg>
-            </button>
+            </a>
+
           </div>
         </div>
       </div>

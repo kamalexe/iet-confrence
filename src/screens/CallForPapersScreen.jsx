@@ -26,12 +26,12 @@ const CallForPapersScreen = () => {
                     <li>Font: Times New Roman, size 10-point.</li>
                     <li>Margins: 0.75 inches on all sides (varies slightly by journal/conference).</li>
                     <li>
-                        Download full formatting & submission guidelines{" "}                            <a
+                        Download full formatting & submission guidelines{" "}
+                        <a
                             href="/pdfs/guide.docx"
                             download
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-primary"
                         >
                             Word Format (.docx)
                         </a>
