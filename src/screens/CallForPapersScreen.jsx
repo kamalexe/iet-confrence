@@ -49,7 +49,7 @@ const CallForPapersScreen = () => {
                     height="200"
                     className="rounded shadow"
                 />
-                <p className="mt-2">
+                <p className="mt-2 text-center">
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform"
                         target="_blank"

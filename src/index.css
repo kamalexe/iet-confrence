@@ -414,3 +414,17 @@ a.btn-gradient:focus-visible {
   background-color: transparent;
   box-shadow: none
 }
+
+/* Justify all paragraphs inside the About section */
+.container .bg-glass p {
+  text-align: justify;
+}
+
+/* Center align the Useful Links section */
+.useful-links {
+  text-align: center;
+}
+
+.useful-links a {
+  text-decoration: none;
+}

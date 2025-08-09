@@ -18,14 +18,14 @@ const MemberCard = ({ image, name, role, designation, isSpecial = false }) => {
       />
 
       <div className="card-body mt-3">
-        {role && (<p className={`card-text mb-1 ${isSpecial ? 'text-decoration-underline' : ''}`}>
+        {role && (<p className={`card-text mb-1 text-center ${isSpecial ? 'text-decoration-underline' : ''}`}>
             {role}
           </p>
         )}
         <h5 className="card-title">{name}</h5>
         {designation && (
           <p
-            className="card-text small"
+            className="card-text small text-center"
             dangerouslySetInnerHTML={{ __html: designation }}
           />
         )}
