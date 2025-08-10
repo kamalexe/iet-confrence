@@ -84,8 +84,7 @@ const ProgramScreen = () => {
             return (
               <div key={track.id} className="accordion-item bg-transparent text-white border-0">
                 <h2 className="accordion-header" id={`heading${normalizedId}`}>
-                  <button
-                    className="accordion-button bg-glass text-white"
+                  <button className="accordion-button bg-glass text-white"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target={`#collapse${normalizedId}`}

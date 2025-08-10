@@ -11,20 +11,20 @@ const Footer = () => {
               <p>Dr. Bhimrao Ambedkar University, Agra</p>
             </div>
 
-            <div className="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4 useful-links">
+            <div className="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold">Useful Links</h6>
               <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "120px", height: "2px" }} />
 
               <div className="row">
                 <div className="col-12 col-lg-6 d-flex flex-column">
-                  <p><a className="text-white" href="/pdfs/paper-template.docx" download>Download Paper Template</a></p>
-                  <p><a className="text-white" href="/pdfs/guide.docx" download>Download Submission Guidelines</a></p>
-                  <p><a className="text-white" href="/pdfs/ICFCSAI-2025 Brochure.pdf" target="_blank">ICFCSAI-2025 Brochure</a></p>
+                  <p><a className="text-white text-decoration-none" href="/pdfs/paper-template.docx" download>Download Paper Template</a></p>
+                  <p><a className="text-white text-decoration-none" href="/pdfs/guide.docx" download>Download Submission Guidelines</a></p>
+                  <p><a className="text-white text-decoration-none" href="/pdfs/ICFCSAI-2025 Brochure.pdf" target="_blank">ICFCSAI-2025 Brochure</a></p>
                 </div>
                 <div className="col-12 col-lg-6 d-flex flex-column">
-                  <p><a className="text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform" target="_blank">Registration Form</a></p>
-                  <p><a className="text-white" href="https://dbrau.ac.in/" target="_blank">Dr. Bhimrao Ambedkar University, Agra</a></p>
-                  <p><a className="text-white" href="/contact">Help</a></p>
+                  <p><a className="text-white text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform" target="_blank">Registration Form</a></p>
+                  <p><a className="text-white text-decoration-none" href="https://dbrau.ac.in/" target="_blank">Dr. Bhimrao Ambedkar University, Agra</a></p>
+                  <p><a className="text-white text-decoration-none" href="/contact">Help</a></p>
                 </div>
               </div>
             </div>

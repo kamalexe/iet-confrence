@@ -1,12 +1,14 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { calculateTimeLeft } from "../utils/calculateTimeLeft";
+import { REGISTRATION_START_DATE } from "../constants/dates";
+
 const Navbar = () => {
   const location = useLocation();
 
   const isCallForActive = ["/committees", "/program"].includes(location.pathname);
   const isCityActive = ["/venue", "/program"].includes(location.pathname);
-  const targetDateString = "2025-09-15T00:00:00";
+  const targetDateString = REGISTRATION_START_DATE;
 
   const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft(targetDateString));
 

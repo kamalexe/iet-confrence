@@ -53,9 +53,9 @@ const ContactScreen = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn-gradient w-100">
+        <a type="submit" className="btn-gradient w-100 text-decoration-none">
           Send Message
-        </button>
+        </a>
       </form>
     </main>
   );

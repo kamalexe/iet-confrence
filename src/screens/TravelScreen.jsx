@@ -1,8 +1,42 @@
 import React from "react";
+import carousel1 from "../assets/travel/taj-mahal.jpg";
+import carousel2 from "../assets/travel/agra-fort.jpg";
+import carousel3 from "../assets/travel/agra-fort1.jpg";
+
 
 const TravelScreen = () => {
   return (
     <main className="container py-5">
+      <div>
+
+        <div id="carouselExampleIndicators" className="carousel slide mb-4">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div className="carousel-inner rounded">
+            <div className="carousel-item active">
+              <img src={carousel1} className="d-block w-100 rounded" alt="..."/>
+            </div>
+            <div className="carousel-item">
+              <img src={carousel2} className="d-block w-100 rounded" alt="..."/>
+            </div>
+            <div className="carousel-item">
+              <img src={carousel3} className="d-block w-100 rounded" alt="..."/>
+            </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
       <h2 className="mb-5">Travel & Accommodation</h2>
 
       {/* How to Reach */}

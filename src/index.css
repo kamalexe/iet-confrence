@@ -419,12 +419,3 @@ a.btn-gradient:focus-visible {
 .container .bg-glass p {
   text-align: justify;
 }
-
-/* Center align the Useful Links section */
-.useful-links {
-  text-align: center;
-}
-
-.useful-links a {
-  text-decoration: none;
-}
