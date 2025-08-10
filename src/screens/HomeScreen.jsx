@@ -36,7 +36,9 @@ const HomeScreen = () => {
           <img
             src={carousel1}
             className="d-block w-100 carousel-img"
-            alt="ICFCSAI 2025"
+            alt="ICFCSAI 2025" style={{
+              mixBlendMode: "overlay"
+            }}
           />
 
           <div
