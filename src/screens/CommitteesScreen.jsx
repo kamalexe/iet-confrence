@@ -29,7 +29,7 @@ const committeeMembers = [
   {
     name: 'Dr. Pragya Kabra',
     image: '/committees/Dr. Pragya Kabra.jpg',
-    role: 'Program Secretary',
+    role: 'Conference Secretary',
   },
   {
     name: 'Er. Subodh Sharma',
