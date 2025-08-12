@@ -84,39 +84,31 @@ const HomeScreen = () => {
             >
               (ICFCSAI-2025)
             </h2>
-
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gradient text-shadow text-decoration-none"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform"
+            >
+              Register Now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                className="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.146 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 1 1-.708-.708L12.293 8H2.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </a>
             {loading ? (
               <p className="text-light mt-2">Loading...</p>
-            ) : registrationStarted ? (
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-gradient text-shadow text-decoration-none"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform"
-              >
-                Register Now
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  className="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.146 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 1 1-.708-.708L12.293 8H2.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </a>
-            ) : (
-              <p
-                className="text-shadow text-warning mt-2"
-                style={{
-                  fontSize: "1rem",
-                  letterSpacing: "0.2px",
-                }}
-              >
+            ) : registrationStarted ? '' : (
+              <p className="text-shadow text-warning mt-2" style={{ fontSize: "1rem",letterSpacing: "0.2px",}}>
                 Registration starts from 15<sup>th</sup> September 2025
               </p>
             )}

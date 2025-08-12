@@ -21,7 +21,7 @@ const Navbar = () => {
   }, [targetDateString]);
 
   return (
-    <nav className="mt-2 mx-4 navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top top-5" style={{ top: "1rem", zIndex: 2000 }}>
+    <nav className="m-2 navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top top-5" style={{ top: "1rem", zIndex: 2000 }}>
       <div className="container">
         {/* Brand */}
         <NavLink className="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" to="/">

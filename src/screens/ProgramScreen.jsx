@@ -5,43 +5,43 @@ const programTracks = [
     id: "Track 1",
     title: "Artificial Intelligence and Machine Learning",
     content:
-      "This track delves into advanced topics including deep learning architectures, convolutional and recurrent neural networks, and large-scale natural language processing (NLP) models. It also covers reinforcement learning, intelligent agents, and generative AI. Focus will be given to the application of ML algorithms in autonomous systems, ethical AI, explainability, and the integration of machine learning in real-world systems using modern frameworks such as TensorFlow, PyTorch, and Scikit-learn.",
+      "This track focuses on theoretical and practical advancements in AI and ML, including deep learning, neural networks, reinforcement learning, natural language processing, and intelligent agent systems. It aims to highlight algorithms, frameworks, and novel models that contribute to smart decision-making systems.",
   },
   {
     id: "Track 2",
-    title: "Data Science, Big Data & Intelligent Analytics",
+    title: "Data Science, Big Data, and Intelligent Analytics",
     content:
-      "Focuses on end-to-end data workflows — from data ingestion, cleaning, and feature engineering to data mining and predictive modeling. Topics include scalable big data platforms (e.g., Hadoop, Spark), real-time analytics, intelligent visualization techniques, and business intelligence systems. The track also encourages discussions on responsible AI, data governance, data privacy, and using analytics for strategic decision-making across industries such as healthcare, finance, and smart infrastructure.",
+      "Covering the full data pipeline — from data collection and storage to analysis and visualization — this track invites research on big data platforms, predictive modeling, data mining, statistical computing, and the role of AI in transforming raw data into actionable insights.",
   },
   {
     id: "Track 3",
-    title: "Computer Vision, Robotics & Intelligent Automation",
+    title: "Computer Vision, Robotics, and Intelligent Automation",
     content:
-      "This track encompasses AI-powered visual systems and autonomous machines. Subjects include image segmentation, object detection, video analytics, SLAM (Simultaneous Localization and Mapping), robot path planning, human-robot interaction, and computer vision for embedded systems. Emerging topics like drone vision, surveillance analytics, and vision-based quality inspection in manufacturing will be explored, along with open-source tools and hardware integration for robotics.",
+      "This track brings together innovation in computer vision, robotics, drone technology, image and video processing, and AI-powered automation. It emphasizes intelligent systems capable of perception, motion, and interaction with the physical world.",
   },
   {
     id: "Track 4",
-    title: "Cybersecurity, Blockchain & Secure Systems",
+    title: "Cybersecurity, Blockchain, and Secure Systems",
     content:
-      "Emphasizes foundational and emerging areas of cybersecurity including cryptographic algorithms, zero-trust architecture, AI-enabled intrusion detection systems, and secure software development practices. The blockchain component addresses consensus mechanisms, smart contract vulnerabilities, decentralized identity, and Web3 security. This track will also feature research on post-quantum cryptography and the application of AI in cyber defense strategies against evolving threats.",
+      "As AI becomes more pervasive, ensuring secure computing is essential. This track invites research on cybersecurity protocols, blockchain technologies, intrusion detection systems, cryptography, and AI’s role in enhancing digital security.",
   },
   {
     id: "Track 5",
-    title: "IoT, Edge Computing & Smart Systems",
+    title: "IoT, Edge Computing, and Smart Systems",
     content:
-      "Covers system architectures and data flow in the Internet of Things (IoT) ecosystem, including device communication protocols (MQTT, CoAP), edge analytics, and fog computing. It emphasizes real-time AI at the edge, energy-efficient embedded intelligence, smart city infrastructure, wearable health monitoring, and predictive maintenance in Industry 4.0. Topics also include sensor fusion, digital twins, and integration with 5G networks for low-latency intelligent applications.",
+      "This track focuses on the integration of AI with the Internet of Things (IoT), smart sensors, edge and fog computing, and their applications in smart homes, cities, healthcare, and industries.",
   },
   {
     id: "Track 6",
-    title: "Education Technology & Digital Learning",
+    title: "Education Technology and Digital Learning",
     content: {
       paragraph:
-        "Explores how digital tools are transforming education through innovative approaches and platforms. This track encourages research on using AI, AR/VR, and data-driven tools to enhance engagement, learning outcomes, and remote teaching.",
+        "This track explores how digital tools are transforming education through innovative approaches and platforms. Key topics include:",
       bullets: [
-        "E-Learning Platforms: Design, delivery, and accessibility of online learning environments.",
-        "EdTech Innovation: Emerging technologies shaping the future of education.",
-        "MOOCs: The impact and evolution of massive open online courses.",
-        "Gamification: Using game-based elements to enhance learning and engagement.",
+        "E-Learning Platforms",
+        "EdTech Innovation",
+        "MOOCs",
+        "Gamification",
       ],
     },
   },
@@ -49,14 +49,14 @@ const programTracks = [
     id: "Track 7",
     title: "Advances in Communication and Network",
     content:
-      "Focuses on the convergence of communication networks with emerging technologies. Topics include next-generation wireless communication (5G/6G), network security, AI-powered network optimization, SDN/NFV, MIMO systems, and intelligent traffic routing. It also covers IoT-enabled communication systems, edge-cloud collaboration, and high-speed network infrastructure supporting smart environments.",
+      "This track focuses on the integration of AI with the Internet of Things (IoT), smart sensors, edge and fog computing, and their applications in smart homes, cities, healthcare, and industries.",
   },
   {
     id: "Track 8",
-    title: "Multidisciplinary & Emerging Areas in Computer Science",
+    title: "Multidisciplinary and Emerging Areas in Computer Science",
     content: {
       paragraph:
-        "This open-ended track encourages cross-disciplinary innovation. It also explores the social impact of computing technologies, digital ethics, inclusive design, and the convergence of computing with other sciences.",
+        "This inclusive track encourages submissions across all areas of Computer Science, especially those combining multiple disciplines. This track is designed to promote interdisciplinary collaboration and offer a platform for ideas that cut across traditional academic boundaries, aligning with the conference's broader mission. This track invites papers that integrate computer science with other disciplines to solve real-world problems or create innovative systems. Topics include:",
       bullets: [
         "Software Engineering and Agile Methodologies",
         "Cloud Computing and Grid Technologies",
@@ -70,54 +70,82 @@ const programTracks = [
   },
 ];
 
+const recommendedTopics = [
+  "Rethinking cities as planetary agents",
+  "Conceptual and historical overview of remote sensing and the city",
+  "From pixels to politics",
+  "Critical Geographies of urban remote sensing",
+  "Multi-temporal satellite study of land use change and urban growth",
+  "Urban classification and zoning",
+  "Utilizing SAR data in congested urban environments",
+  "Urban remote sensing using AI, machine learning, and deep learning",
+  "A multi-sensor approach to urban growth and heat islands in Kolkata",
+  "Delhi’s air quality and aerosol mapping",
+  "Potentials and drawbacks of remote sensing for smart city governance",
+  "Climate-resilient city and geospatial planning",
+  "Coastal megacities’ disaster risk reduction",
+  "The future of urban sensing with geospatial AI",
+  "Urban circular economy transitions and remote sensing",
+  "Change of cultural landscape",
+  "Case study based observations",
+];
 
-  
 const ProgramScreen = () => {
   return (
     <main className="container py-5">
-        <h2 className="mb-4">Conference Program Tracks</h2>
+      <h2 className="mb-4">Conference Program Tracks</h2>
 
-        <div className="accordion" id="programAccordion">
-          {programTracks.map((track) => {
-            const normalizedId = track.id.replace(/\s+/g, '');
+      <div className="accordion" id="programAccordion">
+        {programTracks.map((track) => {
+          const normalizedId = track.id.replace(/\s+/g, '');
 
-            return (
-              <div key={track.id} className="accordion-item bg-transparent text-white border-0">
-                <h2 className="accordion-header" id={`heading${normalizedId}`}>
-                  <button className="accordion-button bg-glass text-white"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target={`#collapse${normalizedId}`}
-                    aria-expanded="true"
-                    aria-controls={`collapse${normalizedId}`}
-                  >
-                    <b className="me-2">{track.id}:</b> {track.title}
-                  </button>
-                </h2>
-                <div
-                  id={`collapse${normalizedId}`}
-                  className="accordion-collapse collapse show"
+          return (
+            <div key={track.id} className="accordion-item bg-transparent text-white border-0">
+              <h2 className="accordion-header" id={`heading${normalizedId}`}>
+                <button
+                  className="accordion-button bg-glass text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target={`#collapse${normalizedId}`}
+                  aria-expanded="false"
+                  aria-controls={`collapse${normalizedId}`}
                 >
-                  <div className="accordion-body">
-                    {typeof track.content === 'string' ? (
-                      <p>{track.content}</p>
-                    ) : (
-                      <>
-                        <p>{track.content.paragraph}</p>
-                        <ul className="ms-3">
-                          {track.content.bullets?.map((point, index) => (
-                            <li key={index}>{point}</li>
-                          ))}
-                        </ul>
-                      </>
-                    )}
-                  </div>
+                  <b className="me-2">{track.id}:</b> {track.title}
+                </button>
+              </h2>
+              <div
+                id={`collapse${normalizedId}`}
+                className="accordion-collapse collapse"
+              >
+                <div className="accordion-body">
+                  {typeof track.content === 'string' ? (
+                    <p>{track.content}</p>
+                  ) : (
+                    <>
+                      <p>{track.content.paragraph}</p>
+                      <ul className="ms-3">
+                        {track.content.bullets?.map((point, index) => (
+                          <li key={index}>{point}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
                 </div>
               </div>
-            );
-          })}
-        </div>
-      
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Recommended Topics Section */}
+      <div className="mt-5">
+        <h3>Recommended Topics (but not limited to)</h3>
+        <ul className="ms-3">
+          {recommendedTopics.map((topic, index) => (
+            <li key={index}>{topic}</li>
+          ))}
+        </ul>
+      </div>
     </main>
   );
 };

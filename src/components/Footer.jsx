@@ -6,9 +6,9 @@ const Footer = () => {
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold">Institute of Engineering & Technology, Agra</h6>
+              <h6 className="fw-bold">Institute of Engineering & Technology, Agra</h6>
               {/* <hr className="mb-4 mt-0 d-inline-block mx-auto bg-info" style={{ width: "60px", height: "2px" }} /> */}
-              <p>Dr. Bhimrao Ambedkar University, Agra</p>
+              <h6 className="fw-bold">Dr. Bhimrao Ambedkar University, Agra</h6>
             </div>
 
             <div className="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
@@ -25,6 +25,8 @@ const Footer = () => {
                   <p><a className="text-white text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform" target="_blank">Registration Form</a></p>
                   <p><a className="text-white text-decoration-none" href="https://dbrau.ac.in/" target="_blank">Dr. Bhimrao Ambedkar University, Agra</a></p>
                   <p><a className="text-white text-decoration-none" href="/contact">Help</a></p>
+                  <p><a className="text-white text-decoration-none" href="/student-conveners">Student Conveners</a></p>
+
                 </div>
               </div>
             </div>
@@ -66,10 +68,8 @@ const Footer = () => {
           </div>
         </div>
       </section>
-
       <div className="text-center p-3">
-        © 2025 Copyright:
-        <a className="text-white" href="https://www.linkedin.com/in/kamal-maurya/"> Kamal Maurya</a>
+        © 2025 Copyright ICFCSAI
       </div>
     </footer>
   );
