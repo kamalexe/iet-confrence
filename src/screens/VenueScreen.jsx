@@ -9,7 +9,7 @@ const VenueScreen = () => {
       <div className="bg-glass p-4 mb-5">
         <h4 className="fw-semibold mb-3">Institute of Engineering & Technology, Agra</h4>
         <p className="mb-2">
-          The International Conference on Future of Computer Science with AI (ICFCSAI-2025) will be hosted at the <strong>Institute of Engineering & Technology (IET), Agra</strong>, a prestigious institution under Dr. A.P.J. Abdul Kalam Technical University (AKTU).
+          The International Conference on Future of Computer Science with AI (ICFCSAI-2025) will be hosted at the <strong>Institute of Engineering & Technology (IET), Agra</strong>, a prestigious institution under Dr Bhimrao Ambedkar University, Agra (DBRAU).
         </p>
         <p className="mb-2">
           The institute is located at Khandari Campus, a serene academic environment situated in the heart of Agra, known for its historic legacy and accessibility.
