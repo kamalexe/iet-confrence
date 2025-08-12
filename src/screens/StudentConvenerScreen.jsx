@@ -3,8 +3,8 @@ import MemberCard from "../components/MemberCard";
 
 const studentConveners = [
     {
-        name: 'Puru Shikhawar',
-        image: '/students/Puru Shikhawar.webp',
+        name: 'Puru Shekhawat',
+        image: '/students/Puru Shekhawat.webp',
         role: 'Publicity',
         designation: '3rd Year',
       },
