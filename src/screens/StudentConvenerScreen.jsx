@@ -4,19 +4,19 @@ import MemberCard from "../components/MemberCard";
 const studentConveners = [
     {
         name: 'Puru Shikhawar',
-        image: '/students/Puru Shikhawar.jpg',
+        image: '/students/Puru Shikhawar.webp',
         role: 'Publicity',
         designation: '3rd Year',
       },
   {
     name: 'Kamal Maurya',
-    image: '/students/Kamal Maurya.jpg',
+    image: '/students/Kamal Maurya.webp',
     role: 'Technical Support',
     designation: '4th Year',
   },
   {
     name: 'Javed Malik',
-    image: '/students/Javed Malik.jpeg',
+    image: '/students/Javed Malik.webp',
     role: 'Hospitality',
     designation: '4th Year',
   },
