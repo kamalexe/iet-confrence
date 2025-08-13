@@ -5,20 +5,17 @@ const studentConveners = [
     {
         name: 'Puru Shekhawat',
         image: '/students/Puru Shekhawat.webp',
-        role: 'Publicity',
-        designation: '3rd Year',
+        designation: 'CSE (3rd Year)',
       },
   {
     name: 'Kamal Maurya',
     image: '/students/Kamal Maurya.webp',
-    role: 'Technical Support',
-    designation: '4th Year',
+    designation: 'CSE (4th Year)',
   },
   {
     name: 'Javed Malik',
     image: '/students/Javed Malik.webp',
-    role: 'Hospitality',
-    designation: '4th Year',
+    designation: 'CSE (4th Year)',
   },
 
 ];

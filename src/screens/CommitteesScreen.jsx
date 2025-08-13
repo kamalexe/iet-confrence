@@ -53,15 +53,6 @@ const committeeMembers = [
   },
 ];
 
-// const foodCommitteeMembers = [
-//   { name: 'Er. Subodh Sharma' },
-//   { name: 'Er. Saurabh Garg' },
-//   { name: 'Er. Prashant Maharishi' },
-//   { name: 'Dr. Ganesh Chandra' },
-//   { name: 'Dr. Pragya Kabra' },
-//   { name: 'Er. Shikhi Agarwal' },
-// ];
-
 const CommitteesScreen = () => {
   return (
     <main className="container py-5">
