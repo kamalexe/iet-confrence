@@ -25,7 +25,6 @@ const Footer = () => {
                   <p><a className="text-white text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLSdN1c9-gQVoHoc-Gw5fKduR5C32QUfbUOtNm56oB4tkQk_8EA/viewform" target="_blank">Registration Form</a></p>
                   <p><a className="text-white text-decoration-none" href="https://dbrau.ac.in/" target="_blank">Dr. Bhimrao Ambedkar University, Agra</a></p>
                   <p><a className="text-white text-decoration-none" href="/contact">Help</a></p>
-                  <p><a className="text-white text-decoration-none" href="/student-conveners">Student Conveners</a></p>
 
                 </div>
               </div>
@@ -42,7 +41,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white text-decoration-none"
-                >Institute of Engineering & Technology, Agra, India</a>
+                >Swami Vivekanand Campus Khandari, Agra, India - 282002</a>
               </p>
 
               <p>

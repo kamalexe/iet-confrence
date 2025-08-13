@@ -1,33 +1,7 @@
 import React, { useState, useEffect } from "react";
 import carousel1 from "../assets/c1.jpg";
-import { calculateTimeLeft } from "../utils/calculateTimeLeft";
-import { CONFERENCE_START_DATE, REGISTRATION_START_DATE } from "../constants/dates";
 
 const HomeScreen = () => {
-  const targetDateString = CONFERENCE_START_DATE;
-  const registrationStartDate = REGISTRATION_START_DATE;
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDateString));
-  const [registrationStarted, setRegistrationStarted] = useState(false);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const checkStatus = () => {
-      setTimeLeft(calculateTimeLeft(targetDateString));
-      const now = new Date();
-      setRegistrationStarted(now >= new Date(registrationStartDate));
-      setLoading(false); // 👈 only set after first check
-    };
-
-    // Run immediately on mount
-    checkStatus();
-
-    // Run every second
-    const timer = setInterval(checkStatus, 1000);
-
-    return () => clearInterval(timer);
-  }, [targetDateString, registrationStartDate]);
-
   return (
     <main>
       {/* Carousel */}
@@ -104,14 +78,7 @@ const HomeScreen = () => {
                   d="M10.146 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 1 1-.708-.708L12.293 8H2.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708z"
                 />
               </svg>
-            </a>
-            {loading ? (
-              <p className="text-light mt-2">Loading...</p>
-            ) : registrationStarted ? '' : (
-              <p className="text-shadow text-warning mt-2" style={{ fontSize: "1rem",letterSpacing: "0.2px",}}>
-                Registration starts from 15<sup>th</sup> September 2025
-              </p>
-            )}
+            </a>            
           </div>
         </div>
       </div>

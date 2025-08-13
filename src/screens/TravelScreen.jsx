@@ -17,13 +17,13 @@ const TravelScreen = () => {
           </div>
           <div className="carousel-inner rounded">
             <div className="carousel-item active">
-              <img src={carousel1} className="d-block w-100 rounded" alt="..."/>
+              <img src={carousel1} className="d-block w-100 rounded" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src={carousel2} className="d-block w-100 rounded" alt="..."/>
+              <img src={carousel2} className="d-block w-100 rounded" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src={carousel3} className="d-block w-100 rounded" alt="..."/>
+              <img src={carousel3} className="d-block w-100 rounded" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -78,13 +78,14 @@ const TravelScreen = () => {
         <h4 className="fw-semibold mb-3">Campus Location</h4>
         <div className="ratio ratio-16x9">
           <iframe
-            title="IET Agra Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14127.947500222418!2d78.01000565!3d27.19288285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974765e9fbd6b81%3A0x603a9915c999f19f!2sInstitute%20of%20Engineering%20and%20Technology%2C%20Agra!5e0!3m2!1sen!2sin!4v1693568416790"
-            width="100%"
-            height="300"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.3054108721285!2d77.98947207503542!3d27.20955947647149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747766625cce3f%3A0x9eb5b271353779a9!2sInstitute%20of%20Engineering%20%26%20Technology%2C%20Khandari%2C%20Agra!5e0!3m2!1sen!2sin!4v1754554386303!5m2!1sen!2sin"
+            width="600"
+            height="450"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="IET Agra Location"
           ></iframe>
         </div>
       </div>

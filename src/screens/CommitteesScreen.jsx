@@ -1,5 +1,6 @@
 import React from 'react';
 import MemberCard from "../components/MemberCard";
+import StudentCard from"../components/StudentCard";
 
 const committeeMembers = [
   {
@@ -7,7 +8,7 @@ const committeeMembers = [
     image: '/committees/Prof. Ashu Rani.jpeg',
     role: 'Chief Patron',
     designation: 'Vice Chancellor,<br> Dr. Bhimrao Ambedkar University, Agra',
-    isSpecial : true,
+    isSpecial: true,
   },
   {
     name: 'Prof. Manu Pratap Singh',
@@ -53,9 +54,28 @@ const committeeMembers = [
   },
 ];
 
+const studentConveners = [
+  {
+    name: 'Puru Shekhawat',
+    image: '/students/Puru Shekhawat.webp',
+    designation: 'CSE (3rd Year)',
+  },
+  {
+    name: 'Kamal Maurya',
+    image: '/students/Kamal Maurya.webp',
+    designation: 'CSE (4th Year)',
+  },
+  {
+    name: 'Javed Malik',
+    image: '/students/Javed Malik.webp',
+    designation: 'CSE (4th Year)',
+  },
+];
+
 const CommitteesScreen = () => {
   return (
     <main className="container py-5">
+      {/* Organizing Committee */}
       <div>
         <h2 className="mb-4 text-white">Organizing Committee</h2>
         <div className="row g-4">
@@ -72,6 +92,19 @@ const CommitteesScreen = () => {
           ))}
         </div>
       </div>
+
+      {/* Student Committee */}
+      <div className="mt-5">
+        <h2 className="mb-4 text-white">Student Committee</h2>
+
+        <div className="row g-4 justify-content-center">
+          {studentConveners.map((student, i) => (
+            <StudentCard key={i} {...student} />
+          ))}
+        </div>
+
+      </div>
+
     </main>
   );
 };
