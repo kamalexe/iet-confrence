@@ -5,15 +5,16 @@ export default function WelcomeModal() {
     useEffect(() => {
         const lastSeenTime = localStorage.getItem("welcomeLastSeen");
         const now = Date.now();
-        // const oneHour = 60 * 60 * 1000; // milliseconds
-        const oneHour = 1000; // milliseconds
+        const oneHour = 60 * 60 * 1000;
+        // Todo: Use For Testion
+        // const oneHour = 1000; // milliseconds
 
 
         if (!lastSeenTime || now - parseInt(lastSeenTime, 10) > oneHour) {
             const modalEl = document.getElementById("welcomeModal");
             const modal = new window.bootstrap.Modal(modalEl, {
-                // keyboard: true,
-                backdrop: false // disables dark overlay
+                keyboard: true,
+                backdrop: false
             });
             modal.show();
             localStorage.setItem("welcomeLastSeen", now.toString());
