@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import carousel1 from "../assets/c1.jpg";
+import WelcomeModal from "../components/WelcomeModal";
 
 const HomeScreen = () => {
   return (
     <main>
+      <WelcomeModal />
       {/* Carousel */}
       <div className="mb-5" style={{ marginTop: "-10rem", position: "relative" }}>
         <div className="rounded shadow-sm position-relative">
