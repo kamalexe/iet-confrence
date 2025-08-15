@@ -11,6 +11,8 @@ const Navbar = () => {
   const targetDateString = REGISTRATION_START_DATE;
 
   const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft(targetDateString));
+    // Scroll
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -20,8 +22,29 @@ const Navbar = () => {
     return () => clearInterval(timer);
   }, [targetDateString]);
 
+  // Scroll listener
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10); // adjust threshold as needed
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="m-2 navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top top-5" style={{ top: "1rem", zIndex: 2000 }}>
+    // Scroll listener
+    <nav
+      className={`navbar navbar-expand-lg navbar-dark shadow-sm sticky-top ${
+        scrolled ? "mx-5 bg-glass bg-gradient" : "mx-0 bg-transparent"
+      }`}
+      style={{
+        top: scrolled ? "1rem" : "0rem",
+        zIndex: 2000,
+        transition: "margin 0.3s ease, top 0.4s ease, background-color 0.5s ease"
+      }}
+    >
+          {/* <nav className="m-2 navbar navbar-expand-lg navbar-dark bg-glass bg-gradient shadow-sm py-3 sticky-top top-5" style={{ top: "1rem", zIndex: 2000 }}> */}
+
       <div className="container">
         {/* Brand */}
         <NavLink className="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" to="/">
@@ -43,7 +66,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2">
             <li className="nav-item">
-              <NavLink exact="true" className="nav-link fw-semibold" to="/">
+              <NavLink end className="nav-link fw-semibold" to="/">
                 Home
               </NavLink>
             </li>
