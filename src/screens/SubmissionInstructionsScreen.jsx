@@ -1,8 +1,28 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const SubmissionInstructionsScreen = () => {
     return (
         <main className="container py-5">
+            {/* SEO META TAGS */}
+            <Helmet>
+                <title>Submission Guidelines | ICFCSAI 2025</title>
+                <meta
+                    name="description"
+                    content="Submission guidelines for ICFCSAI 2025. Read paper requirements, submission methods, and publication ethics before submitting your research."
+                />
+                <meta name="keywords" content="ICFCSAI 2025, Conference Submission, Paper Guidelines, Research Conference, AI Conference" />
+                <meta property="og:title" content="Submission Guidelines - ICFCSAI 2025" />
+                <meta property="og:description" content="Read the submission guidelines for ICFCSAI 2025 including paper requirements, submission process, and publication ethics." />
+                <meta property="og:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+                <meta property="og:url" content="https://iet-confrence.vercel.app/submission-guidelines" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Submission Guidelines - ICFCSAI 2025" />
+                <meta name="twitter:description" content="Submission guidelines for ICFCSAI 2025 including paper requirements, submission methods, and ethics." />
+                <meta name="twitter:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+            </Helmet>
+
             <div className="bg-glass p-5 rounded-4 shadow">
                 <h2 className="mb-4">Submission Guidelines</h2>
                 <p className="lead">

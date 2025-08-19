@@ -1,5 +1,6 @@
 import React from "react";
-import { MDBCard, MDBCardBody, MDBContainer } from "mdb-react-ui-kit";
+import { Helmet } from "react-helmet-async";
+import { MDBCardBody } from "mdb-react-ui-kit";
 
 const schedule = [
   {
@@ -112,7 +113,48 @@ const schedule = [
 export default function ScheduleScreen() {
   return (
     <main className="container py-5">
+      {/* ✅ SEO Meta Tags */}
+      <Helmet>
+        <title>Conference Schedule | FCSAI-2025</title>
+        <meta
+          name="description"
+          content="Check out the detailed schedule of FCSAI-2025: keynote sessions, technical tracks, workshops, and networking events happening from September 25–27, 2025."
+        />
+        <meta
+          name="keywords"
+          content="FCSAI 2025, AI Conference Schedule, Computer Science Conference, Artificial Intelligence, Machine Learning, Robotics, Cybersecurity, Blockchain, IoT, Emerging Tech"
+        />
+        <meta property="og:title" content="FCSAI-2025 Conference Schedule" />
+        <meta
+          property="og:description"
+          content="Explore the 3-day agenda of FCSAI-2025 including AI, ML, Robotics, Cybersecurity, Blockchain, IoT, and Emerging Tech sessions."
+        />
+        <meta
+          property="og:image"
+          content="https://iet-confrence.vercel.app/banner.jpg"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://iet-confrence.vercel.app/schedule"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FCSAI-2025 Conference Schedule" />
+        <meta
+          name="twitter:description"
+          content="Stay updated with the full schedule of the International Conference on Future of Computer Science with AI (FCSAI-2025)."
+        />
+        <meta
+          name="twitter:image"
+          content="https://iet-confrence.vercel.app/banner.jpg"
+        />
+        <link
+          rel="canonical"
+          href="https://iet-confrence.vercel.app/schedule"
+        />
+      </Helmet>
 
+      {/* ✅ Timeline */}
       <div className="main-timeline">
         {schedule.map((daySchedule, index) =>
           daySchedule.sessions.map((session, sessionIndex) => (
@@ -133,6 +175,5 @@ export default function ScheduleScreen() {
         )}
       </div>
     </main>
-    // </MDBContainer>
   );
 }

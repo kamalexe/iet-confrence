@@ -1,9 +1,28 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import registerQR from '../assets/register_qr.png';
 
 const CallForPapersScreen = () => {
     return (
         <main className='container py-5'>
+            {/* ✅ SEO Meta Tags */}
+            <Helmet>
+                <title>Call for Papers | ICFCSAI 2025</title>
+                <meta
+                    name="description"
+                    content="Submit your research to ICFCSAI 2025. Important dates, submission guidelines, and registration details for the International Conference on the Future of Computer Science with AI."
+                />
+                <meta property="og:title" content="Call for Papers | ICFCSAI 2025" />
+                <meta property="og:description" content="Submit your papers to ICFCSAI 2025. Check deadlines, guidelines, and registration details." />
+                <meta property="og:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://iet-confrence.vercel.app/call-for-papers" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Call for Papers | ICFCSAI 2025" />
+                <meta name="twitter:description" content="Submit your research to ICFCSAI 2025. Check important dates, guidelines, and registration process." />
+                <meta name="twitter:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+            </Helmet>
+
             <h2>Call for Papers</h2>
 
             <p className="text-lg mb-6 leading-relaxed">

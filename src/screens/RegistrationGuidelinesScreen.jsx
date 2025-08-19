@@ -1,9 +1,40 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import registerQR from '../assets/register_qr.png';
 
 const RegistrationScreen = () => {
     return (
         <main className="container py-5">
+            {/* ✅ SEO Meta Tags */}
+            <Helmet>
+                <title>Registration | FCSAI-2025 Conference</title>
+                <meta
+                    name="description"
+                    content="Register now for the International Conference on Future of Computer Science with AI (FCSAI-2025). View fee structure and scan QR code to complete registration."
+                />
+                <meta property="og:title" content="FCSAI-2025 Registration" />
+                <meta
+                    property="og:description"
+                    content="Register for the FCSAI-2025 International Conference. Explore categories, fees, and deadlines."
+                />
+                <meta
+                    property="og:image"
+                    content="https://iet-confrence.vercel.app/banner.jpg"
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://iet-confrence.vercel.app/registration" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="FCSAI-2025 Registration" />
+                <meta
+                    name="twitter:description"
+                    content="Register now for the FCSAI-2025 Conference. Early bird discounts available!"
+                />
+                <meta
+                    name="twitter:image"
+                    content="https://iet-confrence.vercel.app/banner.jpg"
+                />
+            </Helmet>
+
             <div className="bg-glass p-5">
                 <h1 className="mb-4">Registration Fee Structure</h1>
 

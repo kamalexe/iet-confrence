@@ -1,10 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Helmet } from "react-helmet-async";
 import carousel1 from "../assets/c1.jpg";
 import WelcomeModal from "../components/WelcomeModal";
 
 const HomeScreen = () => {
   return (
     <main>
+      {/* ✅ SEO META TAGS */}
+      <Helmet>
+        <title>
+          ICFCSAI-2025 | International Conference on Future of Computer Science with AI
+        </title>
+        <meta
+          name="description"
+          content="Join ICFCSAI-2025 from 25th–27th Sept 2025 at IET Agra. Explore AI innovations, research, and collaboration in the Future of Computer Science."
+        />
+        <meta
+          name="keywords"
+          content="ICFCSAI 2025, AI Conference, Future of Computer Science, Artificial Intelligence, IET Agra, International Conference, Computer Science with AI"
+        />
+
+        {/* Open Graph (Facebook/LinkedIn) */}
+        <meta property="og:title" content="ICFCSAI-2025 | Future of Computer Science with AI" />
+        <meta
+          property="og:description"
+          content="Premier international conference uniting academia, industry, and research to shape the future of Computer Science and AI."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iet-confrence.vercel.app/" />
+        <meta property="og:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="ICFCSAI-2025 | Future of Computer Science with AI" />
+        <meta
+          name="twitter:description"
+          content="Join ICFCSAI-2025 at IET Agra to explore AI innovations, practical implementations, and the impact of Computer Science."
+        />
+        <meta name="twitter:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://iet-confrence.vercel.app/" />
+      </Helmet>
+
+      {/* Welcome Modal */}
       <WelcomeModal />
       {/* Carousel */}
       <div className="mb-5" style={{ marginTop: "-10rem", position: "relative" }}>
@@ -80,7 +119,7 @@ const HomeScreen = () => {
                   d="M10.146 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 1 1-.708-.708L12.293 8H2.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708z"
                 />
               </svg>
-            </a>            
+            </a>
           </div>
         </div>
       </div>

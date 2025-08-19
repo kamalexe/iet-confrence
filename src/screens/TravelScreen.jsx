@@ -2,11 +2,44 @@ import React from "react";
 import carousel1 from "../assets/travel/taj-mahal.jpg";
 import carousel2 from "../assets/travel/agra-fort.jpg";
 import carousel3 from "../assets/travel/agra-fort1.jpg";
-
+import { Helmet } from "react-helmet-async";
 
 const TravelScreen = () => {
   return (
     <main className="container py-5">
+      {/* ✅ SEO META TAGS */}
+      <Helmet>
+        <title>Travel & Accommodation | ICFCSAI-2025, Agra</title>
+        <meta
+          name="description"
+          content="Plan your travel to ICFCSAI-2025 in Agra. Find details on how to reach IET Agra, accommodation options, local transport, and nearby attractions including the Taj Mahal and Agra Fort."
+        />
+        <meta
+          name="keywords"
+          content="ICFCSAI-2025, Travel, Accommodation, Hotels in Agra, IET Agra, Taj Mahal, Agra Fort, Conference Venue"
+        />
+
+        {/* Open Graph (Facebook/LinkedIn) */}
+        <meta property="og:title" content="Travel & Accommodation | ICFCSAI-2025" />
+        <meta
+          property="og:description"
+          content="Get details on how to reach IET Agra, book accommodation, and explore Agra’s attractions during ICFCSAI-2025."
+        />
+        <meta property="og:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iet-confrence.vercel.app/travel" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Travel & Accommodation | ICFCSAI-2025, Agra" />
+        <meta
+          name="twitter:description"
+          content="Plan your visit to ICFCSAI-2025. Travel info, hotels, transport, and attractions in Agra."
+        />
+        <meta name="twitter:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+      </Helmet>
+
+      {/* ✅ UI CONTENT */}
       <div>
 
         <div id="carouselExampleIndicators" className="carousel slide mb-4">

@@ -1,4 +1,5 @@
 import MemberCard from '../components/MemberCard';
+import { Helmet } from 'react-helmet-async';
 
 const speakers = [
   {
@@ -61,6 +62,36 @@ const speakers = [
 const SpeakersScreen = () => {
   return (
     <main className="container py-5">
+      {/* ✅ SEO META TAGS */}
+      <Helmet>
+        <title>Speakers | ICFCSAI-2025 Conference</title>
+        <meta
+          name="description"
+          content="Meet the distinguished speakers of ICFCSAI-2025, including global professors, directors, and researchers from top universities and institutions."
+        />
+        <meta name="keywords" content="ICFCSAI-2025, Speakers, Conference, AI, Computer Science, Research, University Professors" />
+
+        {/* Open Graph (Facebook, LinkedIn, etc.) */}
+        <meta property="og:title" content="Speakers | ICFCSAI-2025 Conference" />
+        <meta
+          property="og:description"
+          content="Discover the eminent speakers of ICFCSAI-2025 from leading universities and institutions worldwide."
+        />
+        <meta property="og:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iet-confrence.vercel.app/speakers" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Speakers | ICFCSAI-2025 Conference" />
+        <meta
+          name="twitter:description"
+          content="Meet the keynote and invited speakers of ICFCSAI-2025 from across the globe."
+        />
+        <meta name="twitter:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+      </Helmet>
+
+      {/* ✅ Page UI */}
       <div>
         <h2 className="mb-4 text-white">Speakers</h2>
         <div className="row g-4">

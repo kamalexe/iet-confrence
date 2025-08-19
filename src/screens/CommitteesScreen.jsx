@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
+import { Helmet } from "react-helmet-async";
 import MemberCard from "../components/MemberCard";
-import StudentCard from"../components/StudentCard";
+import StudentCard from "../components/StudentCard";
 
 const committeeMembers = [
   {
@@ -75,6 +76,44 @@ const studentConveners = [
 const CommitteesScreen = () => {
   return (
     <main className="container py-5">
+      {/* ✅ SEO */}
+      <Helmet>
+        <title>Organizing Committee | FCSAI-2025</title>
+        <meta
+          name="description"
+          content="Meet the Organizing Committee and Student Committee of the International Conference on Future of Computer Science with AI (FCSAI-2025), hosted at IET Agra."
+        />
+        <meta
+          name="keywords"
+          content="FCSAI 2025, Organizing Committee, Student Committee, IET Agra, Conference"
+        />
+
+        {/* ✅ Open Graph (for social sharing) */}
+        <meta property="og:title" content="Organizing Committee | FCSAI-2025" />
+        <meta
+          property="og:description"
+          content="Meet the team behind the International Conference on Future of Computer Science with AI (FCSAI-2025)."
+        />
+        <meta
+          property="og:image"
+          content="https://iet-confrence.vercel.app/banner.jpg"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fcsai2025.org/committees" />
+
+        {/* ✅ Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Organizing Committee | FCSAI-2025" />
+        <meta
+          name="twitter:description"
+          content="Meet the team behind FCSAI-2025 at IET Agra."
+        />
+        <meta
+          name="twitter:image"
+          content="https://iet-confrence.vercel.app/banner.jpg"
+        />
+      </Helmet>
+
       {/* Organizing Committee */}
       <div>
         <h2 className="mb-4 text-white">Organizing Committee</h2>

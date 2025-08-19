@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const programTracks = [
   {
@@ -93,9 +94,30 @@ const recommendedTopics = [
 const ProgramScreen = () => {
   return (
     <main className="container py-5">
+      {/* ✅ SEO Meta Tags */}
+      <Helmet>
+        <title>Conference Program Tracks | ICFCSAI 2025</title>
+        <meta
+          name="description"
+          content="Explore the ICFCSAI 2025 program tracks covering Artificial Intelligence, Machine Learning, Data Science, IoT, Cybersecurity, Computer Vision, EdTech, and more."
+        />
+        <meta
+          name="keywords"
+          content="ICFCSAI 2025, Conference Tracks, Artificial Intelligence, Machine Learning, Data Science, Cybersecurity, IoT, Blockchain, Computer Vision, Robotics, Communication Networks"
+        />
+        <meta property="og:title" content="Conference Program Tracks | ICFCSAI 2025" />
+        <meta
+          property="og:description"
+          content="Discover ICFCSAI 2025 program tracks, featuring AI, ML, Data Science, Cybersecurity, IoT, and interdisciplinary computer science research."
+        />
+        <meta property="og:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://iet-confrence.vercel.app/program" />
+      </Helmet>
+
       <h2 className="mb-4">Conference Program Tracks</h2>
 
-      <div className="accordion" id="programAccordion">
+            <div className="accordion" id="programAccordion">
         {programTracks.map((track) => {
           const normalizedId = track.id.replace(/\s+/g, '');
 

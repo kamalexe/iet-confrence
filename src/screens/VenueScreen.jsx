@@ -1,8 +1,78 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const VenueScreen = () => {
   return (
     <main className="container py-5">
+      {/* ✅ SEO Meta Tags */}
+      <Helmet>
+        <title>Venue | ICFCSAI-2025 | IET Agra</title>
+        <meta
+          name="description"
+          content="The International Conference on Future of Computer Science with AI (ICFCSAI-2025) will be hosted at the Institute of Engineering & Technology (IET), Agra, Uttar Pradesh, India."
+        />
+        <meta
+          name="keywords"
+          content="ICFCSAI 2025, IET Agra, AI Conference India, Computer Science Conference, Venue IET Agra, Dr Bhimrao Ambedkar University"
+        />
+        <meta name="author" content="ICFCSAI-2025 Organizing Committee" />
+
+        {/* Open Graph for Social Sharing */}
+        <meta property="og:title" content="Venue | ICFCSAI-2025 | IET Agra" />
+        <meta
+          property="og:description"
+          content="ICFCSAI-2025 will be hosted at Institute of Engineering & Technology (IET), Agra — a premier institution under Dr Bhimrao Ambedkar University, Agra."
+        />
+        <meta property="og:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+        <meta property="og:url" content="https://iet-confrence.vercel.app/venue" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Venue | ICFCSAI-2025 | IET Agra" />
+        <meta
+          name="twitter:description"
+          content="The International Conference on Future of Computer Science with AI (ICFCSAI-2025) will take place at IET Agra, a prestigious institution under DBRAU."
+        />
+        <meta name="twitter:image" content="https://iet-confrence.vercel.app/banner.jpg" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://iet-confrence.vercel.app/venue" />
+
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            name: "ICFCSAI-2025 Venue",
+            startDate: "2025-09-25",
+            endDate: "2025-09-27",
+            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+            eventStatus: "https://schema.org/EventScheduled",
+            location: {
+              "@type": "Place",
+              name: "Institute of Engineering & Technology, Agra",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Khandari Campus",
+                addressLocality: "Agra",
+                postalCode: "282002",
+                addressRegion: "Uttar Pradesh",
+                addressCountry: "India",
+              },
+            },
+            image: ["https://iet-confrence.vercel.app/banner.jpg"],
+            description:
+              "The International Conference on Future of Computer Science with AI (ICFCSAI-2025) will be hosted at Institute of Engineering & Technology (IET), Agra.",
+            organizer: {
+              "@type": "Organization",
+              name: "Institute of Engineering & Technology, Agra",
+              url: "https://iet-confrence.vercel.app",
+            },
+          })}
+        </script>
+      </Helmet>
+
       <h2 className="mb-5">Venue Details</h2>
 
       {/* Venue Overview */}
