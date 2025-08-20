@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iet-confrence.vercel.app/sitemap.xml
