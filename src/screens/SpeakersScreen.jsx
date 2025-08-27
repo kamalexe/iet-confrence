@@ -55,6 +55,11 @@ const speakers = [
     role: 'Associate Professor',
     image: '/speakers/Dr. B.D.K. Patro.jpg',
     designation: 'Rajkiya Engineering College (REC), Kannauj, India',
+  },  {
+    name: 'Dr. Munish Jindal',
+    role: 'Associate Professor and Head,',
+    image: '/speakers/Dr. Munish Jindal.jpeg',
+    designation: 'Maharaja Ranjit Singh Punjab Technical University',
   },
 ];
 
